@@ -15,16 +15,17 @@ Email: sales AT medimage.co.nz  (Or atomjumpcom AT gmail.com)
 Send photos from phone to PC
  
 
-* Private
+* Private. 
 Patient privacy is at the forefront of our design.
 
-* Secure
+* Secure. 
 Privacy requires security. Images are stored only for as long as is essential for transmission, and can rest within your network.
 
-* Download Links
+* Download Links. 
 Download MedImage for Windows, the MedImage proxy server, or the app for Android/iPhone.
+https://github.com/atomjump/medimage-co-nz-content-only/blob/master/download-links.md
 
-* Simple
+* Simple. 
 So simple to use – less than 2 minutes to install and pair with your phone.
 
 * Efficient

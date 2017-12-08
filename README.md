@@ -62,10 +62,10 @@ Installation and Customer Service
 If you use the default settings a folder will be created on your desktop, and the photos will go there once transferred. However, this is configurable (and if a Medical package is detected e.g. MedTech, it will default to it’s media folder)
  
 * How do I re-open the server?
-You will find ‘MedImage Server’ on your desktop, and on your start bar under ‘programs’, depending on which version of Windows you are using. If you cannot find this, you can also enter ‘localhost:5566’ into your browser URL bar....
+You will find ‘MedImage Server’ on your desktop, and on your start bar under ‘programs’, depending on which version of Windows you are using. If you cannot find this, you can also enter ‘localhost:5566’ into your browser URL bar.
 
 * Do I need any technical knowledge?
-You do not need technical knowledge. You should have a Windows PC (e.g. Vista, 7, 10, Server). You should also have ‘Administrator’ access, so that you can install the server. If not, you will likely need to get in touch with your system admin....
+You do not need technical knowledge. You should have a Windows PC (e.g. Vista, 7, 10, Server). You should also have ‘Administrator’ access, so that you can install the server. If not, you will likely need to get in touch with your system admin.
  
 * What sort of phone can I use?
 Almost any Android phone or tablet, and almost any iPhone or iPad.

@@ -7,7 +7,9 @@ This repository is a public copy of the important content on http://medimage.co.
 
 
 
-Welcome to MedImage. The smartest medical imaging app on the planet  Email: sales@medimage.co.nz  (Or atomjumpcom AT gmail.com)
+Welcome to MedImage. The smartest medical imaging app on the planet  
+
+Email: sales AT medimage.co.nz  (Or atomjumpcom AT gmail.com)
   
 # MedImage
 Send photos from phone to PC

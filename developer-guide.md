@@ -108,9 +108,9 @@ An add-on exists in the /addons/ folder in a MedImage Server installation ( >= v
 
 ## Events
 
-photoWritten: this occurs as soon as a new photo has been written. ‘param1’ will have the absolute path of the new photo written in the /photos folder (note: not the backed up file).
+__photoWritten:__ this occurs as soon as a new photo has been written. ‘param1’ will have the absolute path of the new photo written in the /photos folder (note: not the backed up file).
 
-urlRequest: this occurs when there is a particular URL requested from the MedImage server’s web server.
+__urlRequest:__ this occurs when there is a particular URL requested from the MedImage server’s web server.
 
  
 

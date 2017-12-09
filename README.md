@@ -90,3 +90,7 @@ https://github.com/atomjump/medimage-co-nz-content-only/blob/master/MedImageBroc
 
 http://medimagestatus.atomjump.com/?autostart=true
 
+## Prices
+
+https://github.com/atomjump/medimage-co-nz-content-only/blob/master/prices.md
+

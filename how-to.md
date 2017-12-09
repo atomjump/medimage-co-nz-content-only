@@ -13,9 +13,7 @@ This repository is a public copy of the important content on http://medimage.co.
 Assuming you have installed both your MedImage server on your PC and the MedImage app on your phone.
 
 1. Open your MedImage server on your PC
-
 2. Click on one of the large ‘pairing buttons’ (and consider any options in the ‘View Details’ section)
-
 3. With the generated code, enter this into your phone app. If this is the first time you have used the app, tap on the large button in the middle of the app, and enter this code when asked. If it is a new PC, see the instructions below under ‘Use MedImage across multiple locations, or PCs’.
 
 
@@ -54,22 +52,22 @@ file fileagain               \file-fileagain-datetime.jpg
 [blank]                      \image-datetime.jpg
 ``` 
 
-Create a folder by default for every Patient ID
+## Create a folder by default for every Patient ID
 
 In your app:
 
-Tap on the ‘Settings’ three bars in the bottom right hand corner.
-Switch on ‘ID writes a folder’
-Close the options.
-Tap inside the ID field and start typing your patient ID.
-Capture the image and send. The folder will be called your patient ID on your PC. The ‘#’ works just as normal on any secondary words and would creates a subfolder for the image off the parent folder.
+1. Tap on the ‘Settings’ three bars in the bottom right hand corner.
+2. Switch on ‘ID writes a folder’
+3. Close the options.
+4. Tap inside the ID field and start typing your patient ID.
+5. Capture the image and send. The folder will be called your patient ID on your PC. The ‘#’ works just as normal on any secondary words and would creates a subfolder for the image off the parent folder.
 
 
 
 
  
 
-Install multiple MedImage servers on the same Wifi Network
+## Install multiple MedImage servers on the same Wifi Network
 
 Currently, this configuration is not fully supported with fast WiFi scanning/sending. The app will choose the first MedImage server that it finds, which could result in photos being sent to the wrong PC.
 
@@ -77,11 +75,12 @@ Instead, each phone should be paired with the corresponding PC manually, and you
 
  
 
-Use MedImage across multiple locations, or PCs
+## Use MedImage across multiple locations, or PCs
 
-Tap on the ‘Settings’ three bars in the bottom right hand corner.
-Touch ‘Add a New PC’
-Enter a name for the PC
-Touch the large ‘Camera to PC’.
-Open the MedImage server in the new location and choose one of the pairing options. Enter this code in your phone.
+1. Tap on the ‘Settings’ three bars in the bottom right hand corner.
+2. Touch ‘Add a New PC’
+3. Enter a name for the PC
+4. Touch the large ‘Camera to PC’.
+5. Open the MedImage server in the new location and choose one of the pairing options. Enter this code in your phone.
+
 To switch between locations in future, click ‘Settings’ and then touch the PC you have added. You can delete obsolete PCs with the ‘trash can’ next to each of them.

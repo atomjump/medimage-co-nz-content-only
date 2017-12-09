@@ -17,6 +17,10 @@ https://github.com/atomjump/medimage-co-nz-content-only/blob/master/download-lin
 
 2. Use a commercially available MedImage Add-on, that appends the new photos directly into the external system’s database. For example, see the MedTech32 Add-on.
 
+https://github.com/atomjump/medimage-co-nz-content-only/blob/master/medtech32-addon.md
+
+https://github.com/atomjump/medimage-co-nz-content-only/blob/master/other-addons.md
+
 Please contact atomjumpcom AT gmail.com for further details of Add-ons.
 
 3. Build you own connection software, using the MedImage Developers API. This can connect to any system you choose, including your own custom systems. MedImage/AtomJump are available to help write these add-ons if you are not development-inclined, but each development is considered on a case-by-case basis commercially and an agreement will need to be discussed with yourselves. You can also choose to develop and sell these add-ons independently of MedImage.

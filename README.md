@@ -86,4 +86,7 @@ https://github.com/atomjump/medimage-co-nz-content-only/blob/master/guide.md
 https://github.com/atomjump/medimage-co-nz-content-only/blob/master/MedImageBrochure.pdf
 
 
+## Service Status
+
+http://medimagestatus.atomjump.com/?autostart=true
 

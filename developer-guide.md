@@ -278,7 +278,7 @@ Within a .zip package (which is easier to develop and test), you should include 
 }
 ```
 
-name the globally unique name for this add-on, which will be displayed within the Add-ons page, and will be the directory created within the medimage\addons folder. Use lower-case and do not include spaces.
+* __name__: the globally unique name for this add-on, which will be displayed within the Add-ons page, and will be the directory created within the medimage\addons folder. Use lower-case and do not include spaces.
 
 * __installCommands__ are the commands to run after the .zip file has been unpacked to carry out an installation.
 

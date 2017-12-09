@@ -12,45 +12,45 @@ There are 4 different transfer options:
 
 ## Wifi
 
-Ease of Use: Simple
-MedImage App One-off Price: $10/doctor
-MedImage Server Price: Free
-Hosting & Bandwidth: Free
-Security Level: Low
-Support Offered: None
+* Ease of Use: Simple
+* MedImage App One-off Price: $10/doctor
+* MedImage Server Price: Free
+* Hosting & Bandwidth: Free
+* Security Level: Low
+* Support Offered: None
 
 
 
 ## Existing Network
 
-Ease of Use: Technical
-MedImage App One-off Price: $10/doctor
-MedImage Server Price: Free
-Hosting & Bandwidth: Free
-Security Level: High (Private Network)
-Support Offered: Optional Consultancy
+* Ease of Use: Technical
+* MedImage App One-off Price: $10/doctor
+* MedImage Server Price: Free
+* Hosting & Bandwidth: Free
+* Security Level: High (Private Network)
+* Support Offered: Optional Consultancy
 
 
 
 
 ## Via MedImage
 
-Ease of Use: Simple
-MedImage App One-off Price: $10/doctor
-MedImage Server Price: Free
-Hosting & Bandwidth: 5GB free + $10/month per practice
-Security Level: High
-Support Offered: Installation help
+* Ease of Use: Simple
+* MedImage App One-off Price: $10/doctor
+* MedImage Server Price: Free
+* Hosting & Bandwidth: 5GB free + $10/month per practice
+* Security Level: High
+* Support Offered: Installation help
 
 
 ## Create a new network
 
-Ease of Use: Technical
-MedImage App One-off Price: $10/doctor
-MedImage Server Price: Free
-Hosting & Bandwidth: Approx $10/month
-Security Level: High (Private Network)
-Support Offered: Optional Consultancy
+* Ease of Use: Technical
+* MedImage App One-off Price: $10/doctor
+* MedImage Server Price: Free
+* Hosting & Bandwidth: Approx $10/month
+* Security Level: High (Private Network)
+* Support Offered: Optional Consultancy
 
 
 

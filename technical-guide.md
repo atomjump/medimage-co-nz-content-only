@@ -14,7 +14,7 @@ This repository is a public copy of the important content on http://medimage.co.
 
 Note: this section requires technical and system administration knowledge.
 
-INSERT PIC
+<img src="https://github.com/atomjump/medimage-co-nz-content-only/blob/master/medimage-proxy.png">
 
 What you will need: a linux (or Windows) web server with an incoming and outgoing internet connection. Any number of client Windows PCs potentially in different physical premises.
 
@@ -150,16 +150,16 @@ C:\medimage2\nssm.exe remove medimage2 confirm
 Here are some possible configurations for integration with your existing medical systems:
 
 * MedImage server on each PC
-LINK
+https://github.com/atomjump/medimage-co-nz-content-only/blob/master/medImageInstallOption1.pdf
 
 * MedImage Server on each PC, with your own proxy server
-LINK
+https://github.com/atomjump/medimage-co-nz-content-only/blob/master/medImageInstallOption2.pdf
 
 * MedImage Proxy server on your application server
-LINK
+https://github.com/atomjump/medimage-co-nz-content-only/blob/master/medImageInstallOption3.pdf
 
 * MedImage Server on Windows Servers with shared drives (e.g. Primary Health organisations)
-LINK
+https://github.com/atomjump/medimage-co-nz-content-only/blob/master/MedImagePrimaryHealth.pdf
 
 
 

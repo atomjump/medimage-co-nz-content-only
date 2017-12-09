@@ -23,7 +23,7 @@ The setup: your server will receive photos over 3G or 4G wireless from your doct
 
 ## Proxy Setup
 
-On your internet server, first install NodeJS and npm. See these install scripts, under the section ‘Node.js v4.x’, but there are multiple ways to do this depending on your platform e.g. MacOSX specific instructions are here. Note, Windows server users can install the same Windows 64-bit installer that client PCs use and do not need to follow the steps in this section below, however there are some configuration options which are slightly different (see Windows Binary Proxy Setup below).
+On your internet server, first install NodeJS and npm. See these install scripts, under the section ‘Node.js v4.x’, but there are multiple ways to do this depending on your platform e.g. MacOSX specific instructions are here https://github.com/atomjump/medimage-co-nz-content-only/blob/master/mac-installation.md. Note, Windows server users can install the same Windows 64-bit installer that client PCs use and do not need to follow the steps in this section below, however there are some configuration options which are slightly different (see Windows Binary Proxy Setup below).
 
 Then
 

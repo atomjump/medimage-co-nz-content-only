@@ -90,3 +90,5 @@ We believe AtomJump Ltd. and it’s MedImage product meet the core requirements 
 Software License
 
 Please read our current license here, which applies to the server, and the app.
+
+https://www.binpress.com/license/view/l/a84bbfba8bde4e2da7644e10c6143c45

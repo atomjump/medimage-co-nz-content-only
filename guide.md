@@ -26,6 +26,7 @@ https://github.com/atomjump/medimage-co-nz-content-only/blob/master/faq.md
 
 In order for you to receive the photos from your phone, you need to download a companion server to your PC. This server has a straightforward installer ready for Windows machines. You can test this out directly, without any technical knowledge, if you have a Wifi connection shared between your PC and your phone. If you wish to use the internet only, you can choose an easy 4 digit pairing option via AtomJump’s (AJ) own servers. Some medical institutions require a private ‘proxy’ server to be set up, however. If your system admins have already set this up, and have given you an address for the ‘MedImage Proxy Server’, follow this Installation Guide.
 
+https://github.com/atomjump/medimage-co-nz-content-only/blob/master/SetupInstructionsforMedImage.pdf
 
 ## The Proxy Server [Optional]
 

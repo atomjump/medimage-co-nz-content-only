@@ -6,6 +6,11 @@
 This repository is a public copy of the important content on http://medimage.co.nz,  in case the servers should be down.
 
 
+# Other Addons
+
+Along with the MedTech32 add-on, there are several other add-ons available:
+
+
 ## Addon – Resize
 
 This MedImage server add-on provides the ability to rescale the images automatically, as soon as they have been uploaded.

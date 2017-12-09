@@ -78,6 +78,12 @@ https://youtu.be/zYee0anPr60
 
 ## More details
 
+https://github.com/atomjump/medimage-co-nz-content-only/blob/master/guide.md
+
+
+## Brochure
+
+https://github.com/atomjump/medimage-co-nz-content-only/blob/master/MedImageBrochure.pdf
 
 
 

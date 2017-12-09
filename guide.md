@@ -15,7 +15,11 @@ This app allows the medical professional to upload a photo and ID from their pho
 
 See the ‘How To’ guide, the ‘How does it work?’ section, or the FAQ for further tips.
 
-LINKS HERE
+https://github.com/atomjump/medimage-co-nz-content-only/blob/master/how-to.md
+
+https://github.com/atomjump/medimage-co-nz-content-only/blob/master/how-does-it-work.md
+
+https://github.com/atomjump/medimage-co-nz-content-only/blob/master/faq.md
 
 
 ## The PC Server
@@ -34,7 +38,7 @@ What you will need: a linux (or Windows) web server with an incoming and outgoin
 The setup: your server will receive photos over 3G or 4G wireless from your doctor’s mobile phones. The client Windows PCs are associated uniquely with each different mobile phone (via a code generated for each PC). A photo will stay on the proxy server for a few seconds before being downloaded to the doctor’s unique Windows machine, and then being removed from the proxy server.
 
 More details can be found at:
-LINK HERE
+https://github.com/atomjump/medimage-co-nz-content-only/blob/master/technical-guide.md
 
 
 ## Data Transfers

@@ -61,7 +61,7 @@ __Q. Can I sync to a network folder?__
 
 A. Yes, when you install the server, you have the choice of which folder to write to, and this can be a network folder. You can also choose to add additional backup folders if you have some technical configuration skill. Please note: your administrator user must have any network drive mappings available to it, as the software runs as the admin user. Also see the Technical Guide for further troubleshooting tips.
 
- 
+https://github.com/atomjump/medimage-co-nz-content-only/blob/master/technical-guide.md
 
 __Q. I have looked at setting up a cloud proxy server, but it looks difficult. Can you help?__
 
@@ -113,6 +113,7 @@ A. In ver >= 1.3.4, you can do this in the Settings page. Prior to this, the bes
 
 You should see something similar to this:
 
+```
 {
 “purpose“: “MedImage Server Configuration File. Example readproxy http://YOURIP:5566/read/yourdir“,
 “backupTo“: [“C:/yourfolder” ],
@@ -121,14 +122,17 @@ You should see something similar to this:
 “allowPhotosLeaving“: false,
 “allowGettingRemotePhotos“: true
 }
+```
+
 Change the “backupTo” entry to whatever you have changed the folder to. Note, the folder should always be using forward slashes ‘/’ rather than the conventional Windows backslash ‘\’.  Then save the file again, and either restart the whole machine (depending on how many people are using it), or you can enter the Windows ‘services’, look down for ‘MedImage’, click it once, and then click ‘Restart the service’.
 
  
 
 __Q. Is there any research on using mobile phone cameras in a medical context?__
 
-A. This is a good 2015 phone camera dermatology study, and Dermnet have some more recent guidelines.  It should be noted that we believe MedImage provides a more secure approach to the options mentioned in the first article.
+A. This is a good 2015 phone camera dermatology study https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4439742/, and Dermnet have some more recent guidelines.  It should be noted that we believe MedImage provides a more secure approach to the options mentioned in the first article.
 
+https://www.dermnetnz.org/cme/dermatoscopy-photography/security-saving-sharing-images/
  
 
 __Q. Our advice has been that mobile phones shouldn’t be used for medical imaging. How is this different?__

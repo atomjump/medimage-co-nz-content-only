@@ -116,11 +116,11 @@ urlRequest: this occurs when there is a particular URL requested from the MedIma
 
 ## Event sub-parameters
 
-scriptURLName is the path. E.g. ‘grab-colour’ will be activated when the url ‘/addons/grab-colour/’ is called.
+__scriptURLName__ is the path. E.g. ‘grab-colour’ will be activated when the url ‘/addons/grab-colour/’ is called.
 
-runProcess is a unix or Windows command-line that runs a process. Make sure it will run on whichever platform(s) your add-on supports. You can safely assume that NodeJS will be installed on all target installations. The parameters will come inwardly as ‘param1’, which is exactly what comes after e.g. ‘/addons/grab-colour/’ in the URL line. Typically this would be a urlencoded array of GET parameters e.g. ‘?test1=value&test2=value2’, although it could also be a single string e.g. for the URL ‘/addons/grab-colour/a-nice-file.jpg’, param1 would be set to ‘a-nice-file.jpg’.  The constant ‘parentdir’ should be used at the start of a path to represent the MedImage parent folder.
+__runProcess__ is a unix or Windows command-line that runs a process. Make sure it will run on whichever platform(s) your add-on supports. You can safely assume that NodeJS will be installed on all target installations. The parameters will come inwardly as ‘param1’, which is exactly what comes after e.g. ‘/addons/grab-colour/’ in the URL line. Typically this would be a urlencoded array of GET parameters e.g. ‘?test1=value&test2=value2’, although it could also be a single string e.g. for the URL ‘/addons/grab-colour/a-nice-file.jpg’, param1 would be set to ‘a-nice-file.jpg’.  The constant ‘parentdir’ should be used at the start of a path to represent the MedImage parent folder.
 
-priority determines how urgent the request is. Options are ‘high’,’medium’, ‘low’, ‘glacial’.
+__priority__ determines how urgent the request is. Options are ‘high’,’medium’, ‘low’, ‘glacial’.
 
 ‘high’ will embed the command in the main server code itself for maximum running speed, so it should start with ‘node’ e.g.
 
@@ -133,18 +133,24 @@ See the ‘Embedding’ section below for tips for embedding code within the pac
 
 ‘glacial’ priority will run the script in the same manner as ‘medium’ but runs the process in the background in a non-resource hungry way. Use this for background installers or long processes.
 
-waitForRequestFinish is the HTML page to call after this script has finished. This HTML page should be installed in the MedImage server’s ‘/public/pages/’ during your add-on’s installation process.
+__waitForRequestFinish__ is the HTML page to call after this script has finished. This HTML page should be installed in the MedImage server’s ‘/public/pages/’ during your add-on’s installation process.
 
 Your script can pass back return parameters to the ‘waitForRequestFinish’ HTML file, for string inclusion in the HTML pages, by writing to standard output. In NodeJS you would console.log() something like:
 
+```
 console.log("returnParams:?your-param=data&your-param2=data2");
+```
+
 You can print out other messages before this in your script, so this line should be at the end of the script.  In this case, the string ‘your-param’ and ‘your-param2’ would be replaced with data and data2 within the HTML file that was run afterwards. Note: as of ver 0.8.1, you must include a ‘returnParams’ message, for the ‘standardheader’ to be inserted in this HTML page. This requirement may no longer be there in future versions.
 
-active can be switched on or off with ‘true’ or ‘false’ depending on whether you want the functionality working currently.
+__active__ can be switched on or off with ‘true’ or ‘false’ depending on whether you want the functionality working currently.
 
-afterRequest: Alternatively to ‘waitForRequestFinish’, if it is a blind script which doesn’t need to pass other parameters back, in your config file, you can use
+__afterRequest__: Alternatively to ‘waitForRequestFinish’, if it is a blind script which doesn’t need to pass other parameters back, in your config file, you can use
 
+```
 "afterRequest":"your.html.page.here.html"
+```
+
 to forward the browser to the HTML page immediately.
 
  
@@ -153,7 +159,10 @@ to forward the browser to the HTML page immediately.
 
 You can also get URL access to the photo files with your add-ons, but please be cautious about the security of this. You should provide a login facility, or restrict access to the server through network firewalls. Put this at the end of your script:
 
+```
 console.log("returnPhotoFile:../../photos/NHI3443/blister-12-Aug-2017-16-49-30.jpg");
+```
+
 to return the photo file as uploaded via the MedImage app, in the folder NHI3443 and named blister. Keep your “waitForRequestFinish” in the add-on’s config file as a blank string in this case (include it, but don’t fill the contents).
 
  
@@ -162,8 +171,9 @@ to return the photo file as uploaded via the MedImage app, in the folder NHI3443
 
 To return a small snippet of JSON from your add-on’s scripts, set the ‘waitForRequestFinish’ to be ‘snippet.html’, and pass the parameter CUSTOMJSON into it with e.g.
 
+```
 console.log("returnParams:CUSTOMJSON=" + encodeURIComponent(JSON.stringify(resp)));
- 
+``` 
 
  
 
@@ -175,10 +185,11 @@ components/header.html
 
 and add another ‘li’ element to the ‘side-menu’ entry e.g.
 
+```
  <li>
      <a href="http://myurl.com"><i class="fa fa-check-square-o fa-fw"></i> My Menu Item</a>
  </li>
- 
+ ```
 
 Including your own HTML layouts
 
@@ -269,11 +280,11 @@ Within a .zip package (which is easier to develop and test), you should include 
 
 name the globally unique name for this add-on, which will be displayed within the Add-ons page, and will be the directory created within the medimage\addons folder. Use lower-case and do not include spaces.
 
-* 'installCommands' are the commands to run after the .zip file has been unpacked to carry out an installation.
+* __installCommands__ are the commands to run after the .zip file has been unpacked to carry out an installation.
 
-* 'all' are commands that are run on all platforms (Win32/Win64/Unix/Linux/Mac)
+* __all__ are commands that are run on all platforms (Win32/Win64/Unix/Linux/Mac)
 
-* 'win32/win64/unix/mac' are platform specific commands. Unix is synonymous with Linux, here.
+* __win32/win64/unix/mac__ are platform specific commands. Unix is synonymous with Linux, here.
 
  
 

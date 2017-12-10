@@ -195,7 +195,9 @@ Once you’re done, steps to re-enable are
 
 a) The Administrator user (that runs the server software) does not know about the network drive letter. If this is the case, you can either add a drive mapping for that admin user, or use the raw network path.
 
-b) The admin user may not have permissions on that path. You can read more about this here. The admin user should have read and write permissions.
+b) The admin user may not have permissions on that path. You can read more about this here. https://technet.microsoft.com/en-us/library/cc726004(v=ws.11).aspx
+
+The admin user should have read and write permissions.
 
 c) You can use this as a test from an administrator command prompt, to see if you have access rights:
 

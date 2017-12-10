@@ -106,6 +106,10 @@ Web Proxy. If your browsers usually require a proxy server (i.e. for normal web 
 "webProxy": "http://yourUser:yourPassword@webProxyIPaddress:webProxyPort"
 ```
 
+You can switch a server into 'lock down' mode, where the interface cannot change any settings, add-ons, or see any technical logs, by setting
+```
+"lockDown": true
+```
 
 ## Windows Binary Proxy Setup
 
@@ -113,7 +117,8 @@ After the  installation of the MedImage Server on your internet-connected Window
 
 ```
 "allowPhotosLeaving": true,
-"allowGettingRemotePhotos": false
+"allowGettingRemotePhotos": false,
+"lockDOown": true
 ```
 (note: no web server is required)
 

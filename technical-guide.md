@@ -118,7 +118,7 @@ After the  installation of the MedImage Server on your internet-connected Window
 ```
 "allowPhotosLeaving": true,
 "allowGettingRemotePhotos": false,
-"lockDOown": true
+"lockDown": true
 ```
 (note: no web server is required)
 

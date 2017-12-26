@@ -28,14 +28,7 @@ On your internet server, first install NodeJS and npm. See these install scripts
 Then
 
 ```
-sudo npm install pm2@latest -g
-sudo npm install medimage -g
-cd "$(npm prefix -global)/lib/node_modules/medimage/"
-cp addons/configORIGINAL.json addons/config.json 
-pm2 start npm --name "medimage-server" -- start
-./medimage-server.sh; cd ~
-pm2 save
-pm2 startup     	#and run the command it outputs, to get autostart at boot-up.
+eval "$(curl -fsSL -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/atomjump/medimageserv-linstaller/master/install)"
 ```
 
 Then open the firewall to port 5566 for reading and writing eg.
@@ -109,6 +102,11 @@ Web Proxy. If your browsers usually require a proxy server (i.e. for normal web 
 You can switch a server into 'lock down' mode, where the interface cannot change any settings, add-ons, or see any technical logs, by setting
 ```
 "lockDown": true
+```
+
+Some add-ons need a human readable password for light security. This is a global password visible only within the config file (but anyone with file level access to the server can see this), and you should change the default ‘changeme’ password if you intend to use these add-ons. Server Ver >= 1.3.8
+```
+"basicAuthent": "changeme"
 ```
 
 ## Windows Binary Proxy Setup

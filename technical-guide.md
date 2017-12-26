@@ -37,7 +37,7 @@ Then open the firewall to port 5566 for reading and writing eg.
 sudo ufw allow 5566/tcp
 ```
 
-See more details on a Ubuntu firewall setup in this article.
+See more details on a Ubuntu firewall setup in this article: https://www.digitalocean.com/community/tutorials/how-to-setup-a-firewall-with-ufw-on-an-ubuntu-and-debian-cloud-server
 
 To track logs:
 

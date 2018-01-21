@@ -314,6 +314,82 @@ module.exports = {
 }
 ```
  
+ 
+ 
+## Basic Authentication (ver >= 1.3.8)
+
+Basic authentication is available for add-ons written in NodeJS via a global password and session ID mechanism. The global password is set by an administrator in the main config.json file e.g. C:\medimage\config.json.
+
+```
+"basicAuthent": "changeme"
+```
+
+Note: this password is readable in plain text if you have access to the file-system, although it is never shown within the interface. Therefore, it should be considered basic level security, rather than high level security. The password is shared by all users.
+
+__To include basic authentication__ in your client-side HTML pages, add this snippet to the bottom of your page before the body tag:
+
+```
+<!-- MedImage session client script -->
+<script src="../js/session-client.js"></script>
+```
+
+__To check the password__ that has just been entered by a user is valid, from within your add-on’s client-side Javascript: (where the element ‘pass’ is your password text input element)
+
+```
+var uri = "/addon/get-session";
+                    
+jQuery.ajax({
+	url: uri,
+	data: { pass: jQuery("#pass").val() },
+	success: function(data) {
+		var myobj = JSON.parse(data);
+		if(myobj.success == true) {
+			setCookie(myobj.sessionId);
+			//And display any logged in details here
+		} else {
+			alert("Sorry, please enter the correct password");
+		}
+	}
+}); 
+```
+
+Once this cookie has been set, you can refer to it again with
+
+```
+var sessionId = getCookie("sessionId");
+```
+
+and pass it as a URL parameter, such as ‘sessionId’, to your server-side NodeJS scripts.
+
+Eg. to create a URL string, you could use:
+
+```
+var url ="/addon/show-analysis?photo=test&sessionId=' + sessionId;
+```
+
+__Then, from your server-side NodeJS script__ include this at the top of your script:
+
+```
+var session = require('../basic-authentication/session.js');
+```
+
+and check the passed-in ‘sessionId’ parameter is valid, which indicates the user has already entered a correct password, with:
+
+```
+var queryString = require('querystring');
+
+var opts = queryString.parse(param);
+if((opts.sessionId) && (session.checkSessionValid(opts.sessionId) > -1)) {
+   //Yes, the session ID is valid
+} else {
+   //No such session ID
+}
+```
+
+Note: one session entry is stored in RAM indefinitely for each user’s browser that visits the site,  on the server-side. If you are expecting hundreds of thousands of users, this is likely not a good solution, and we would recommend creating your own login and session system, with expiry times; probably using a database or memcaching system. 
+ 
+ 
+ 
 
 ## Example Project
 

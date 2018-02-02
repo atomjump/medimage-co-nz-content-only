@@ -48,7 +48,7 @@ You have three options for transferring data via your phone to your PC
 
 * Via Wifi. This option is free, and very fast, but for security purposes many doctors’ practices do not have a local wifi network set up. The other limitation is that you must be within the vicinity of the network for the transfer to happen.
 
-* Via AtomJump.com’s Secure Servers. This option is easy to set up, and we provide 5GB of initial free transfer. You can purchase unlimited data transfer at a later date, at $US 10 per month (or $NZ 15/month). This is a per-practice cost, rather than a per phone cost.
+* Via AtomJump.com’s Secure Servers. This option is easy to set up, and we provide 500MB of initial free transfer. You can purchase unlimited data transfer at a later date, at $US 2 per month (or $NZ 3/month).
 Purchase Bandwidth (contact atomjumpcom AT gmail.com)
 
 * Via your own Servers. This option takes a little technical expertise, and is free, although you will have standard bandwidth charges from your hosting providers. You have full control over the security of the servers, using http or https.

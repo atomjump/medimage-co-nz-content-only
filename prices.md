@@ -38,7 +38,7 @@ There are 4 different transfer options:
 * Ease of Use: Simple
 * MedImage App One-off Price: $10/doctor
 * MedImage Server Price: Free
-* Hosting & Bandwidth: 5GB free + $10/month per practice
+* Hosting & Bandwidth: 500MB free + $2/month
 * Security Level: High
 * Support Offered: Installation help
 

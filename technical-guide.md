@@ -148,6 +148,31 @@ C:\medimage2\nssm.exe remove medimage2 confirm
 ```
 
 
+## Migrating from one MedImage installation to another
+
+If you are testing out a new installation, while keeping an old installation in live operation, you should use a new global ID on the new installation during the testing phase – this will happen naturally when you install it.
+
+If you wish to keep all existing phones synced correctly when you take the new installation live, you will need to transfer the ID from the old installation to the new one. You can expect a few minutes of down-time for this procedure:
+
+1. Stop the MedImage service on both the old installation and the new installation, in Windows Services. This prevents any installation conflicts.
+
+2. Copy across the following ID fields from the old C:\MedImage\config.json into the new C:\MedImage\config.json.
+
+```
+globalId: "bS6FpXvwagUbeMIXnM"  
+readProxy: "https://medimage-nz1.atomjump.com/read/bS6FpXvwagUbeMIXnM"
+transfer: 45652482
+```
+
+Note: The green values should be the same within any one config file.
+
+3. Restart the MedImage service on the new installation. You should be live now.
+
+4. You might wish to rename the old installation’s C:\MedImage\config.json to C:\MedImage\config-old.json, to completely prevent an accidental reboot from causing the old server to conflict with the new installation, while you are testing the new live installation.
+
+5. Once you are happy with the new live installation, uninstall the old installation’s MedImage Server through the regular Windows ‘Add or Remove Programs’.
+
+
 ## System Overview Options
 
 Here are some possible configurations for integration with your existing medical systems:

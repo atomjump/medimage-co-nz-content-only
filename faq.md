@@ -13,7 +13,7 @@ This repository is a public copy of the important content on http://medimage.co.
 
 __Q. Where do the photos appear?__
 
-A. If you use the default settings a folder will be created on your desktop, and the photos will go there once transferred. However, this is configurable (and if a Medical package is detected e.g. MedTech, it may default to it’s media folder) during installation. They will also appear in C:\MedImage\photos. In ver >= 1.3.4, you can access this in ‘Settings’.
+A. If you use the default settings a folder will be created on your desktop, and the photos will go there once transferred. However, this is configurable (and if a Medical package is detected e.g. MedTech, it may default to it’s media folder) during installation. In ver >= 1.3.4, you can view and change this in ‘Settings’.  Note: The photos will appear temporarily in C:\MedImage\photos as a staging space before being moved into your target folders.  Prior to ver 1.3.4, a back-up of the photos also remained in C:\MedImage\photos.
 
  
 
@@ -65,7 +65,7 @@ https://github.com/atomjump/medimage-co-nz-content-only/blob/master/technical-gu
 
 __Q. I have looked at setting up a cloud proxy server, but it looks difficult. Can you help?__
 
-A. Yes, we have people trained to help with your own private setups. While the server software is free and open source, and we can offer  advice over the web, we do charge for custom installations, particularly if there is any need for us to be onsite.
+A. Yes, we have people trained to help with your own private setups. While the server software is free and open source, and we can offer advice over the web, we do charge for custom installations, particularly if there is any need for us to be on-site.
 
  
 

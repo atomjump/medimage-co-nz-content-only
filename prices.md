@@ -20,8 +20,7 @@ There are 4 different transfer options:
 * Support Offered: None
 
 
-
-## Existing Network
+## Existing Hosting
 
 * Ease of Use: Technical
 * MedImage App One-off Price: $10/doctor
@@ -31,19 +30,17 @@ There are 4 different transfer options:
 * Support Offered: Optional Consultancy
 
 
-
-
 ## Via MedImage
 
 * Ease of Use: Simple
 * MedImage App One-off Price: $10/doctor
 * MedImage Server Price: Free
-* Hosting & Bandwidth: 500MB free + $2/month
+* Hosting & Bandwidth: 500MB free + $2/month/doctor
 * Security Level: High
 * Support Offered: Installation help
 
 
-## Create a new network
+## Create a New Host
 
 * Ease of Use: Technical
 * MedImage App One-off Price: $10/doctor
@@ -56,3 +53,15 @@ There are 4 different transfer options:
 
 
 Note: All prices are in $US. To convert to New Zealand dollars, $US10 = $NZ15.
+
+
+## Optional Add-ons
+
+```
+MedTech32: 			US$480 per MedImage Server – unlimited usage
+Profile for Mac: 	US$50 per MedImage Server – unlimited usage
+Resize:				US$40 per MedImage Server – unlimited usage
+Wound Analysis:		US$329 per MedImage Server – unlimited usage
+```
+
+

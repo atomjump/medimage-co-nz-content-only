@@ -17,6 +17,7 @@ The MedTech32 MedImage Server Add-on provides the ability to add photos directly
 * Choose which MedTech database to access
 * Future-proofed with editable queries, should MedTech32 change their data tables
 * 10% of our income from this product goes to an ‘AtomJump Medical Open-Source Software Fund’ designed to bring more open source medical products to the market, particularly for the developing world.
+* 1 month free trial, when you click ‘Buy Now’. You then pay a one-off license price (split in two 50% installments), for each MedTech32/MedImage Server combination, with no ongoing costs. Any future updates are free.
 
 
 

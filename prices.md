@@ -59,6 +59,7 @@ Note: All prices are in $US. To convert to New Zealand dollars, $US10 = $NZ15.
 
 ```
 MedTech32: 			US$480 per MedImage Server – unlimited usage
+EHR Connector: 		US$480 per MedImage Server – unlimited usage
 Profile for Mac: 	US$50 per MedImage Server – unlimited usage
 Resize:				US$40 per MedImage Server – unlimited usage
 Wound Analysis:		US$329 per MedImage Server – unlimited usage

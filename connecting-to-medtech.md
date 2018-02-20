@@ -26,6 +26,6 @@ To connect to MedTech Evolution you have two options:
 
 __Note__: Our MedImage Server software does not affect a MedTech database in any way, but you can choose to send photos into the MedTech attachment folder. The add-on software does insert records into your MedTech database. The current official approval status by MedTech is detailed on this page:
 
-http://medimage.co.nz/medimage-medtech32-add-on-connection-to-medtech-status/
+https://github.com/atomjump/medimage-co-nz-content-only/blob/master/medtech-status.md
 
 

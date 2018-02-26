@@ -25,6 +25,7 @@ The MedImage EHR Connector Add-on provides the ability to add photos directly fr
 Note: this Windows-only product is intended for developers and integrators, unless your EHR is mentioned below, in which case you will be able to install your system-specific integration after installation of the package:
 
 * MedTech32
+* MedTech Evolution
  
 EHR Connector
 US$ 480 .00
@@ -34,7 +35,7 @@ Unlimited Usage
 1 Month Free Trial
 
 
-Warning: this add-on software requires version >= 1.3.8 of the MedImage Server
+Warning: this add-on software requires version >= 1.4.1 of the MedImage Server
 
 
 
@@ -84,7 +85,7 @@ then making a working connection will be fairly straightforward with this EHR Co
  
 ## Installation
 
-You will need to install the MedImage Server version ( >= 1.3.8), and for testing purposes, we would recommend trying this on a test server or PC, first, to check everything works in your environment. Please back-up your EHR database before first use – this add-on shouldn’t adversely affect anything, but it is always a safe policy. We would recommend doing this process out-of-hours, so that no users are currently accessing the system, but that depends partly on the type of EHR you have.
+You will need to install the MedImage Server version ( >= 1.4.1), and for testing purposes, we would recommend trying this on a test server or PC, first, to check everything works in your environment. Please back-up your EHR database before first use – this add-on shouldn’t adversely affect anything, but it is always a safe policy. We would recommend doing this process out-of-hours, so that no users are currently accessing the system, but that depends partly on the type of EHR you have.
 
 Once the MedImage Server is installed, you should download and install the EHR Connector add-on from
 

@@ -153,6 +153,8 @@ __afterRequest__: Alternatively to ‘waitForRequestFinish’, if it is a blind 
 
 to forward the browser to the HTML page immediately.
 
+__useTargetFolderFile__: (>= v1.4.1) If you include this parameter in a ‘photoWritten’ event, set to ‘true’, your script will be passed the file in the target folder file (i.e. the 1st entry in the backupTo array within C:\medimage\config.json), after it has already been copied there, instead of the transition folder. This is useful when chaining multiple add-ons together, and processing the last photo after it has been copied to the final output folder.
+
  
 
 ## Getting a photo file

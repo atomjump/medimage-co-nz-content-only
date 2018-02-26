@@ -14,8 +14,11 @@ MedTech is a common medical system found within New Zealand practices, but also 
 To connect to MedTech32 you have two options:
 
 1. Send the photos to the attachments folder, and manually add the photos to the patient record from within MedTech32. This option uses the free MedImage Server software, which will automatically set the correct target folder to C:\mt32\attachments during installation.
-2. Purchase the MedTech32 MedImage Add-on software which will add each new photo directly into the MedTech32 database system, becoming visible from within the Attachments window of the patient record within a few seconds. There is a one-time license fee per installation of Medtech32, which costs US$480.
+2. Purchase the EHR Connector MedImage Add-on software which, along with the EHR MedTech32 addition, will add each new photo directly into the MedTech32 database system, becoming visible from within the Attachments window of the patient record within a few seconds. There is a one-time license fee per installation of the EHR Connector, which costs US$480.
+
 More details for this Add-on are here: 
+
+https://github.com/atomjump/medimage-co-nz-content-only/blob/master/ehrconnect-addon.md
 
 ## MedTech Evolution
 
@@ -23,6 +26,9 @@ To connect to MedTech Evolution you have two options:
 
 1. Send the photos to the attachments folder, and manually add the photos to the patient record from within MedTech32. This option uses the free MedImage Server software, which will automatically set the correct target folder to C:\mt32\attachments during installation.
 2. Purchase the EHR Connector MedImage Add-on software which, along with the EHR MedTech Evolution addition, will add each new photo directly into the MedTech Evolution database system, becoming visible from within the Attachments window of the patient record within a few seconds. There is a one-time license fee per installation of the EHR Connector, which costs US$480.
+
+https://github.com/atomjump/medimage-co-nz-content-only/blob/master/ehrconnect-addon.md
+
 
 __Note__: Our MedImage Server software does not affect a MedTech database in any way, but you can choose to send photos into the MedTech attachment folder. The add-on software does insert records into your MedTech database. The current official approval status by MedTech is detailed on this page:
 

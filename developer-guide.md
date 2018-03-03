@@ -250,12 +250,26 @@ Within a .zip package (which is easier to develop and test), you should include 
   "version": "0.2.3",
   "private": false,
   "license": "Commercial",
+  "successMessages": {
+      "all": {
+          "main": "Your installation was successful. You should now configure your settings. Click the 'Resize' tab to get started.",
+          "extended": ""
+      },
+      "win32": {
+          "main": "Some specific Win32 message in here, will override the 'all' message"
+      }
+  },
   "installCommands": {
   	 "all": [
   	 	  "npm install",
   	  	  "node install.js first"
   	  ],
   	  "win32": [
+              { 
+  	      	"attempt": "..\\somefile.exe \/S",
+  	      	"timeoutAfterSeconds": 10,
+  	      	"warnOnTimeout": "Sorry, we could not run your file automatically. If it is not already installed, please open File Manager and double click etc."
+  	      }
   	  ],
   	  "win64": [
   	  ],
@@ -287,6 +301,10 @@ Within a .zip package (which is easier to develop and test), you should include 
 * __all__ are commands that are run on all platforms (Win32/Win64/Unix/Linux/Mac)
 
 * __win32/win64/unix/mac__ are platform specific commands. Unix is synonymous with Linux, here.
+
+* __successMessages__ (ver >= 1.4.3) are messages the user will see on success, for a particular platform.
+
+* __attempt object__ (ver >= 1.4.3) is an item that is attempted to be run, but if there is a failure, it will not stop the whole installation being a success. timeoutAfterSeconds (optional) refers to how long the attempt will run until it’s process is deleted, and the warnOnTimeout (optional) option is the warning that is shown in yellow if this event occurs.
 
  
 

@@ -212,6 +212,22 @@ Once you’re done, steps to re-enable are
 
 5. Restart the MedImage service through the normal Windows services.
 
+
+
+## Administrator rights
+
+Remember that you should be logged in as an ‘Administrator’ user before installing MedImage server. If your machine does not already have an Admin user (which is the case with e.g. client-based Windows 10), you can run ‘cmd’ from the start bar. Right click on the black cmd icon, and click ‘Run as Administrator’.
+
+Then enter the following line:
+
+```
+net user administrator /active:yes
+```
+
+to activate the Administrator user. Once you have logged in, choose a password, and you can then install MedImage Server.
+
+
+
  
 
 ## Common problems with Windows network drives:
@@ -222,7 +238,7 @@ b) The admin user may not have permissions on that path. You can read more about
 
 The admin user should have read and write permissions.
 
-c) You can use this as a test from an administrator command prompt, to see if you have access rights:
+c) You can use this on some systems as a test from an administrator command prompt, to see if you have access rights:
 
 ```
 icacls "D:\somefolder\inhere" /grant Everyone:(OI)(CI)F
@@ -240,7 +256,7 @@ If you are a developer, you can develop your own add-ons to MedImage.
 
 ### MedTech32
 
-If the MedImage add-on settings for ‘Show Identifier Options/Location’ are set to ‘M’, by default, the photos will only be visible when you click the link within MedTech32 on client PCs, not the server itself (since the file reference will be from M:\Attachments\…). However you can work around this:
+If the MedImage add-on settings for ‘Show Extended Options/Maps Down To’ are set to ‘M:\’, and the M drive is not visible on the server (since the file reference will be from M:\Attachments\…), you can use this work around:
 
-You can switch the ‘Location’ setting in MedImage to ‘C’ on a single machine installation of MedTech32
-Or, on the server you can run in a cmd prompt: ‘subst M: C:\mt32’
+You can switch the ‘Show Extended Options/Maps Down To’ setting in MedImage to ‘C’ on a single machine installation of MedTech32
+Or, on the server you can create a mapping in a cmd prompt: ‘subst M: C:\mt32’

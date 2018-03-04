@@ -35,7 +35,7 @@ Unlimited Usage
 1 Month Free Trial
 
 
-Warning: this add-on software requires version >= 1.4.1 of the MedImage Server
+Warning: this add-on software requires version >= 1.4.4 of the MedImage Server
 
 
 
@@ -98,7 +98,7 @@ Post Installation Set-up
 
 Once the installation is complete you should install your specific EHR add-on e.g. ‘MedTech32’ from the same page. If your EHR is not on the list, you will still be able to change the EHR queries to match your situation, although this takes some technical ability.
 
-The MedImage Server software will pop up in a browser with the MedTech32 add-on settings page showing.
+You should click the ‘EHR Connector Add-on’ tab to start configuring and testing the connection.
 
 If your queries have not been set up for your specific type of EHR (i.e. you have not installed a specific EHR add-on), your should re-write these in the ‘Advanced options’ section, before going any further.
 
@@ -114,7 +114,7 @@ You can preview the ‘Show Extended options’ in this picture, and the ‘Adva
 
 ## Setting up ODBC
 
-You need to create a ‘system’ DSN connection to your EHR database through the Windows ODBC page (enter ‘ODBC’ under your Windows start bar). Make sure you use the 64-bit version or the 32-bit version, depending on the database software installed. There are instructions for specific fields in the MedImage add-on settings page under the ‘ODBC Guide’ link. Test the connection within the ODBC driver to ensure it is working. Then add the name of your ODBC connection back into your MedImage MedTech32 settings page. Save and check the connection once more.
+You need to create a ‘system’ DSN connection to your EHR database through the Windows ODBC page (enter ‘ODBC’ under your Windows start bar). Make sure you use the 64-bit version or the 32-bit version, depending on the database software installed. There are instructions for specific fields in the MedImage add-on settings page under the ‘ODBC Guide’ link. Test the connection within the ODBC driver to ensure it is working. Then add the name of your ODBC connection back into your MedImage EHR Connector settings page. Save and check the connection once more.
 
 Once you have successfully connected to your MedTech32 database you are ready to try sending images from your MedImage phone app to your EHR.
 Using the app
@@ -131,7 +131,7 @@ Once a photo has been sent, you should initially check the status of the photo t
 
 ## Please note:
 
-* You cannot send a photo to an ‘inactive’ patient ID
+* You cannot send a photo to an ‘inactive’ patient ID. There will be an error message on the log.
 * If a patient ID number is duplicated, this will return an error, and you will need to manually add the photo to your EHR
 * If nothing appears at all on this log, please check your internet connection from your server
 
@@ -153,9 +153,9 @@ The ODBC driver .exe or .msi that your database requires should be in here
 
 3. medimage-installer.json
 
-You should change the install commands to install your ODBC driver file silently
+You should change the install commands to install your ODBC driver file silently.
 
-Once you have changed the files, you should .zip the project up (we recommend a Windows machine for this as the Mac zip format is sometimes incompatible), and make it accessible to your users to install on the internet via the MedImage Server Add-on installer. MedImage are always happy to add newly compatible EHR projects to our own list, also.
+Once you have changed the files, you should .zip the project up, and make it accessible to your users to install on the internet via the MedImage Server Add-on installer. If you are using github.com for development, you can do a ‘release’, and the link to the .zip file can be used by end-users.  MedImage are always happy to add newly compatible EHR projects to our own list, also.
 
  
 

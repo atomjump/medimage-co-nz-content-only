@@ -161,10 +161,14 @@ A. You can look in ‘Programs and Features’ in Windows control panel for the 
 
  
 
-__Q. My photos don’t seem to appear in MedTech, using the add-on?__
+__Q. My photos don’t seem to appear in my EHR e.g. MedTech, using the add-on?__
 
-A. Make sure you have a working database connection (under settings/MedTech32 from within the Server). If your connection is already working correctly, check the ‘MedTech Logs’ page from within the server. It will show a live list of the photos that were entered into your MedTech system and any errors.
+A. Make sure you have a working database connection (under ‘Settings/EHR Connector’ from within the Server). If your connection is already working correctly, check the ‘EHR Logs’ link from within the server. It will show a live list of the photos that were entered into your EHR system and any errors.
 
-One common problem for new users is missing out the first NHID number as a folder. The correct format from within the app is ‘#[NHID number] [injury name]’, for example ‘#BGDH1233 arm’, or if you have the app option ‘ID writes a folder’ on, you can ignore the ‘#’ at the start and enter simply e.g. ‘BGDH1233 arm’. Please refer to the full user guide of the MedTech32 Add-on.
+One common problem for new users is missing out the first ID number as a folder. The correct format from within the app is ‘#[Patient ID number] [injury name]’, for example ‘#BGDH1233 arm’, or if you have the app option ‘ID writes a folder’ on, you can ignore the ‘#’ at the start and enter simply e.g. ‘BGDH1233 arm’. Please refer to the full user guide of the EHR Connector Add-on:
+
+https://github.com/atomjump/medimage-co-nz-content-only/blob/master/ehrconnect-addon.md
+
+
 
  

@@ -139,7 +139,24 @@ Once you have a green ‘success’ message on this log, you typically wouldn’
 
 You then need to close and re-open the record for that patient, from within your EHR interface. The new photo should be visible, and clickable. E.g.
 
-Developers: Building Your Own
+
+## Configuring Pop-up Error Messages
+
+A photo can fail to be added to your EHR system for various reasons, and if you aren’t checking the live log, you may be surprised when you come back at a later date to check on the same patient, and find the photo isn’t there. Reasons for a failure to insert a photo may include
+
+* Duplicate patient records with the same ID
+* Mis-spelt patient IDs
+* An incorrect naming format
+
+You can configure this using the ‘Error Notification URL’ option under the ‘Advanced Options’ button (in ver >= 0.6.4 of the EHR Connector) .
+
+The idea is that you enter a script’s internet URL which is called remotely whenever an error occurs. This script could send an email or some other form of notification to your team of users. A target email address, for example, could then be configured to pop-up on the user’s desktop, so there is an immediate warning. However, please be aware that fairly sensitive information may be passed in the error message, so secure email is recommended.
+
+We have an existing AtomJump Messenger (https://atomjump.com/) script for this purpose, that sends a secure message, and can give this URL out to customers of the service. Please contact us for further details. However, many people will want to have their own customized setup. We recommend SMTP2GO (https://www.smtp2go.com/) as a reliable email sender to handle outgoing mails from your MedImage Server.
+
+
+
+# Developers: Building Your Own
 
 To create your own EHR connection package, use this project as a template. The only files you will need to change are:
 

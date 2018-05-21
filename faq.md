@@ -59,9 +59,10 @@ A. No, only new photos can currently be taken with the app. The photo is stored 
 
 __Q. Can I sync to a network folder?__
 
-A. Yes, when you install the server, you have the choice of which folder to write to, and this can be a network folder. You can also choose to add additional backup folders if you have some technical configuration skill. Please note: your administrator user must have any network drive mappings available to it, as the software runs as the admin user. Also see the Technical Guide for further troubleshooting tips.
+A. Yes, when you install the server, you have the choice of which folder to write to, and this can be a network folder. You can also choose to add additional backup folders if you have some technical configuration skill. Please note: the user that installs the MedImage Server must have administrative privileges, and be able to read and write to the target network folder.  Any network drive mappings should be available to the user that installed MedImage Server, when run as a background service, but if not, you can use the network path e.g. \\server\folder format. Also see the Technical Guide for further troubleshooting tips.
 
 https://github.com/atomjump/medimage-co-nz-content-only/blob/master/technical-guide.md
+
 
 __Q. I have looked at setting up a cloud proxy server, but it looks difficult. Can you help?__
 
@@ -71,15 +72,17 @@ A. Yes, we have people trained to help with your own private setups. While the s
 
 __Q. How does the app transfer the image?__
 
-A. The app uses Wifi, if available and desired, and if not, it will transfer via your 3G or 4G mobile data connection. See a detailed transfer explanation here.
+A. The app uses Wifi, if available and desired, and if not, it will transfer via your 3G or 4G mobile data connection. See a detailed transfer explanation here:
+
+https://github.com/atomjump/medimage-co-nz-content-only/blob/master/how-does-it-work.md
 
 Note: 3G or 4G connections have standard data transfer fees depending on your mobile provider.
 
  
 
-__Q. How long will your 5GB free transfer via the AtomJump (AJ) servers last me?__
+__Q. How long will your 500MB free transfer via the AtomJump (AJ) servers last me?__
 
-A. If you take 10 photos a week, this will last around one and a half years.
+A. If you take 10 photos a week, this will last around two months.
 
  
 
@@ -165,9 +168,14 @@ __Q. My photos don’t seem to appear in my EHR e.g. MedTech, using the add-on?_
 
 A. Make sure you have a working database connection (under ‘Settings/EHR Connector’ from within the Server). If your connection is already working correctly, check the ‘EHR Logs’ link from within the server. It will show a live list of the photos that were entered into your EHR system and any errors.
 
-One common problem for new users is missing out the first ID number as a folder. The correct format from within the app is ‘#[Patient ID number] [injury name]’, for example ‘#BGDH1233 arm’, or if you have the app option ‘ID writes a folder’ on, you can ignore the ‘#’ at the start and enter simply e.g. ‘BGDH1233 arm’. Please refer to the full user guide of the EHR Connector Add-on:
+The correct format from within the app is ‘[Patient ID number] [injury name]’, for example ‘BGDH1233 arm’, or if you have the app option ‘ID writes a folder’ off, you can enter e.g. ‘#BGDH1233 arm’. Please refer to the full user guide of the EHR Connector Add-on:
 
 https://github.com/atomjump/medimage-co-nz-content-only/blob/master/ehrconnect-addon.md
+
+
+__Q. Can I remove the original full-sized photo when using the Resizer add-on?__
+
+A. Yes, you can optionally choose to do this. If you don’t need to keep the original image, you can set the “Photo Filename Text to Replace” field to ‘.jpg’, and the “with this” field to ‘.jpg’, also, in your ‘Resize options’ settings tab.
 
 
 

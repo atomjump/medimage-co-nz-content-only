@@ -193,7 +193,29 @@ https://github.com/atomjump/medimage-co-nz-content-only/blob/master/MedImagePrim
 
 ## Troubleshooting
 
-If you are having issues with photos not appearing or being transferred to a backup folder, particularly on a Windows server, you can stop the Windows MedImage service temporarily, and run the server from the command-line to watch for errors. Please note: if this is a busy, live service, any delay between stopping the service and running the script could result in missed data.
+
+If you are having issues with photos not appearing or being transferred to a target folder, particularly on a Windows server, firstly check that the photos are arriving in the C:\MedImage\photos folder. If they are, but they haven’t moved into the target folder, the most common problem is a permissions issue. On Windows, check that the user that installed the MedImage Server had administrative privileges, and is able to read and write to the target folder.  Any network drive mappings should be available to the user that installed MedImage Server, when run as a background service, but if not, you can also try the network path e.g. \\server\folder format.
+
+## Common problems with Windows network drives:
+
+a) The Local System user (that may have installed the server software) often won’t know about the network drive letter. In this case you can try the raw network path e.g. ‘\\server\path’
+
+b) An admin user (or in particular the local system user) may not have permissions on that path. You can read more about this here. The admin user should have read and write permissions. You can enable this by setting up a folder or drive share with read and write access for the computer name itself. A MedImage Server holding computer called e.g. MANGO should be shared using the title MANGO$ in the share options on the target folder.
+
+c) You can use this as a test from an administrator command prompt, to see if you have access rights. Create a file called text.txt in Notepad. Then e.g.
+
+```
+copy test.txt M:\targetfolder\
+```
+
+If this returns an error, you know you do not have permissions.
+
+
+## Checking logs
+
+The logs are available on a new installation from the MedImage Server web interface home-page (typically http://localhost:5566), and this is a good first place to check.
+
+You can also get a live log operating by using the command line version, rather than the Windows service version. To do this, stop the Windows MedImage service temporarily, and run the server from the command-line to watch for errors. Please note: if this is a busy, live service, any delay between stopping the service and running the script could result in missed data.
 
 1. Stop the ‘MedImage’ service through the normal Windows services
 
@@ -228,26 +250,6 @@ to activate the Administrator user. Once you have logged in, choose a password, 
 
 
 
- 
-
-## Common problems with Windows network drives:
-
-a) The Administrator user (that runs the server software) does not know about the network drive letter. If this is the case, you can either add a drive mapping for that admin user, or use the raw network path.
-
-b) The admin user may not have permissions on that path. You can read more about this here. https://technet.microsoft.com/en-us/library/cc726004(v=ws.11).aspx
-
-The admin user should have read and write permissions.
-
-c) You can use this on some systems as a test from an administrator command prompt, to see if you have access rights:
-
-```
-icacls "D:\somefolder\inhere" /grant Everyone:(OI)(CI)F
-```
-
-If this returns an error, you know you do not have permissions.
-
- 
-
 ## Add-ons
 
 Add-ons provide additional features to MedImage, and are generally installed in the server’s /addons folder.
@@ -258,5 +260,7 @@ If you are a developer, you can develop your own add-ons to MedImage.
 
 If the MedImage add-on settings for ‘Show Extended Options/Maps Down To’ are set to ‘M:\’, and the M drive is not visible on the server (since the file reference will be from M:\Attachments\…), you can use this work around:
 
-You can switch the ‘Show Extended Options/Maps Down To’ setting in MedImage to ‘C’ on a single machine installation of MedTech32
-Or, on the server you can create a mapping in a cmd prompt: ‘subst M: C:\mt32’
+
+1. You can switch the ‘Show Extended Options/Maps Down To’ setting in MedImage to ‘C:\mt32\’ on a single machine installation of MedTech32
+2. Or, on the server you can create a mapping in a cmd prompt: ‘subst M: C:\mt32’ which maps the \mt32 folder to the M: drive.
+

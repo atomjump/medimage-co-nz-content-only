@@ -60,3 +60,5 @@ If you are upgrading from a Windows MedImage Server prior to 1.0, we recommend y
 C:\MedImage\config.json
 C:\MedImage\photos\
 ```
+
+If you are updating MedImage Server 1.4 versions to 1.5 versions, and want to take advantage of additional file types e.g. .pdf files, you should add a ‘fileWritten’ event into your C:\MedImage\addons\config.json file, in the same location as the ‘photoWritten’ event. Please refer to a technical person to do this, or reinstall your server again after backing up the files/folders above.

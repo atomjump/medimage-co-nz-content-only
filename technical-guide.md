@@ -109,6 +109,16 @@ Some add-ons need a human readable password for light security. This is a global
 "basicAuthent": "changeme"
 ```
 
+Provide the ability to upload additional file types other than basic .jpg photos, e.g. PDF.  You need to specify the allowed extension and MIME type in a new array element e.g. { “extension”: “.pdf”, “mime”: “application/pdf” }. Server Ver >= 1.5.0. Note: This feature is not currently supported via the ‘AJ Proxy Servers’, but will be once the feature is out of Beta.
+
+```
+ "allowedTypes" : [ { "extension": ".jpg", "mime": "image/jpeg" },
+                    { "extension": ".pdf", "mime": "application/pdf" },
+                    { "extension": ".mp4", "mime": "video/mp4" },
+                    { "extension": ".mp3", "mime": "audio/mpeg" } ]
+```
+
+
 ## Windows Binary Proxy Setup
 
 After the  installation of the MedImage Server on your internet-connected Windows Server, edit the config.json file in the server’s directory (usually C:\MedImage\config.json), and set these values:

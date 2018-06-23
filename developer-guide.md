@@ -22,6 +22,7 @@ There is no cost in building or publishing an add-on, although we cannot guarant
 
 Since MedImage is an open-source platform, we believe it will have a stable future.
 
+You can also opt to build your own client app or software that writes into the MedImage Server.  https://github.com/atomjump/medimage-co-nz-content-only/blob/master/develop-own-client.md
  
 
 ## Getting Started

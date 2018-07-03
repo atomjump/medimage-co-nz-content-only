@@ -179,4 +179,8 @@ A. Yes, you can optionally choose to do this. If you don’t need to keep the or
 
 
 
+__Q. Can I use a cloud-hosted system e.g. MedTech in the cloud?__
+
+A. Yes, MedImage works equally well in this environment. The only difference is that you won’t be able to use the local WiFi option for transferring images, which is not generally recommended practice, anyway.
+
  

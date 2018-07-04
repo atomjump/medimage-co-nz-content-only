@@ -93,8 +93,15 @@ The app and server are open source, under the Apache 2.0 license and (c) AtomJum
 
 http://www.apache.org/licenses/LICENSE-2.0
 
-For commercial add-ons, please read our current license here: 
+For commercial add-ons, our current license is: 
+For our commercial add-ons, please read our current license here:
 
-https://www.binpress.com/license/view/l/a84bbfba8bde4e2da7644e10c6143c45
+* You may use this software as-is, and browse the source code as-is for educational purposes, but cannot resell the product independently, unless you pay the license price to AtomJump Limited in New Zealand.
+* Each instance of the MedImage Server typically requires the purchase of a license of the add-on for that server. E.g. if you have 20 different branches, each with one installation of the MedImage Server, you would need to purchase 20 licenses.
+* Note: the intention of this license is that it would be functional for one GP practice of around 5 – 10 users. If you are using a cloud-based system where you service multiple practices, then you will need a license for each practice, or an agreed ‘cloud usage’ type license from AtomJump. Please contact us to arrange a specific agreement. If you are using the MedImage Server for each desktop, then please contact us to arrange a more cost-effective agreement, also.
+* We offer technical assistance including networking, secure domains, maintenance and installation, at an agreed price, on a case by case basis.
+* Most of our larger add-ons have a 30 day trial period where you can ensure that the software is working as expected. There is no time limit on usage of the add-on once purchased, and future updates are free, unless we are involved in their installation, or there is a particularly major change to the product.
+* You may include the product in your own package, provided the correct number of licenses are purchased from AtomJump Limited in New Zealand, so we will need to see some evidence that you are calculating the quantity sold.
+* Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an “AS IS” BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
 Non-AtomJump add-ons will have their own licenses.

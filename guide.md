@@ -89,7 +89,7 @@ We believe AtomJump Ltd. and it’s MedImage product meet the core requirements 
 
 ## Software License
 
-The app and server are open source, under the Apache 2.0 license.  
+The app and server are open source, under the Apache 2.0 license and (c) AtomJump Limited (New Zealand).  
 
 http://www.apache.org/licenses/LICENSE-2.0
 

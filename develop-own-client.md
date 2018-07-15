@@ -43,20 +43,82 @@ Or on a failure:
 nomatch
 ```
 
-This should then have a multi-part https POST request done with the image or file attached, sent to the URL:
+This should then have a multi-part https POST request done with the image or file attached, to the URL:
 
 ```
-https://medimage-nz1.atomjump.com/write/uPSE4UWHmJ8XqFUqvf/api/photo
+https://medimage-nz1.atomjump.com/api/photo
 ```
 
-(note the /api/photo appended, which always needs to be added)
+The file name should have the hash at the end of the server URL entered at the beginning i.e.
+
+```
+#uPSE4UWHmJ8XqFUqvf-test.pdf
+```
+
 
 * The filename string entered into the POST request should have any spaces replaced with hyphens ‘-‘.
 * A hash in front of any word from the original file-name string signifies a new folder on the server.
 
 ```
-Filename String                 Created in the Server target folder
+Filename String                 					Created in the Server target folder
 
-test.pdf                        \test.pdf
-#NHID1234-#arm-wound.jpg        \NHID\arm\wound.jpg
+#uPSE4UWHmJ8XqFUqvf-#NHID1234-#arm-wound.jpg        \NHID\arm\wound.jpg
+#uPSE4UWHmJ8XqFUqvf-test.pdf                    	\test.pdf
 ```
+
+Note: .pdf files are not currently supported by the https://medimage-nz1.atomjump.com/ server, which is running ver 1.4, rather than ver >= 1.5. You will need to set up your own proxy server, to test any files other than a .jpg image file.
+
+
+## Checking if a file exits
+
+To check if a file exists (useful to see if the file has been transferred from the proxy server to the final destination), use e.g.
+
+```
+https://medimage-nz1.atomjump.com/read/uPSE4UWHmJ8XqFUqvf?check=test.jpg
+```
+
+where the file path in the check parameter should be URL encoded.
+
+This will return either ‘true’ if it exists or ‘none’ if it doesn’t.
+
+
+## Testing using a browser
+
+You can create a local .html file and open this in a local browser.
+
+```
+<html>
+
+<body>
+  <form action="https://medimage-nz1.atomjump.com/api/photo" method="post" enctype="multipart/form-data">
+  <p><input type="file" name="file1"></p>
+  <p><button type="submit">Submit</button></p>
+</form>
+</body>
+
+</html>
+```
+
+Rename your local file name with your own hash e.g.
+
+```
+#uPSE4UWHmJ8XqFUqvf-test.jpg
+```
+
+and then try selecting and submitting the file within the browser. You should see a
+
+```
+Received upload successfully!
+```
+
+message, if the file has gone through, and after 10 seconds, you should see the file in your target folder. If you get no visual message, the file has not been sent correctly.
+
+
+## Example client
+
+The MedImage App source code is available to browse at GitHub:
+
+https://github.com/atomjump/medimage
+
+
+

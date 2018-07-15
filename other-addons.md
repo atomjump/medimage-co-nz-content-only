@@ -48,8 +48,10 @@ This MedImage Server add-on provides the ability to automatically analyse and tr
 * Wound detection and area calculation, and sticker detection
 * Colour picking from the photo to determine the wound’s colour ranges
 * A list-view, to allow analysis of the wound over time
+* Percentage improvement analysis of the the wound over time
+* Photo meta-data export to a spreadsheet for further analysis
 
-This product has been built in co-operation with Nurse Maude, New Zealand.
+This product has been built in partnership with Nurse Maude, New Zealand.
 
 This add-on is coming soon. Register your interest, now.
 

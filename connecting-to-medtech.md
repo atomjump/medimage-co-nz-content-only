@@ -14,7 +14,7 @@ MedTech is a common medical system found within New Zealand practices, but also 
 To connect to MedTech32 you have two options:
 
 1. Send the photos to the attachments folder, and manually add the photos to the patient record from within MedTech32. This option uses the free MedImage Server software, which will automatically set the correct target folder to C:\mt32\attachments during installation.
-2. Purchase the EHR Connector MedImage Add-on software which, along with the EHR MedTech32 addition, will add each new photo directly into the MedTech32 database system, becoming visible from within the Attachments window of the patient record within a few seconds. There is a one-time license fee per installation of the EHR Connector, which costs US$480.
+2. Purchase the EHR Connector MedImage Add-on software which, along with the EHR MedTech32 addition, will add each new photo directly into the MedTech32 database system, becoming visible from within the Attachments window of the patient record within a few seconds. There is a one-time license fee per installation of the EHR Connector, which costs US$480. Note: the photo will not appear in the MedTech32 Inbox, only the Attachments window.
 
 More details for this Add-on are here: 
 
@@ -25,7 +25,7 @@ https://github.com/atomjump/medimage-co-nz-content-only/blob/master/ehrconnect-a
 To connect to MedTech Evolution you have two options:
 
 1. Send the photos to the attachments folder, and manually add the photos to the patient record from within MedTech32. This option uses the free MedImage Server software, which will automatically set the correct target folder to C:\mt32\attachments during installation.
-2. Purchase the EHR Connector MedImage Add-on software which, along with the EHR MedTech Evolution addition, will add each new photo directly into the MedTech Evolution database system, becoming visible from within the Attachments window of the patient record within a few seconds. There is a one-time license fee per installation of the EHR Connector, which costs US$480.
+2. Purchase the EHR Connector MedImage Add-on software which, along with the EHR MedTech Evolution addition, will add each new photo directly into the MedTech Evolution database system, becoming visible from within the Attachments window of the patient record within a few seconds. There is a one-time license fee per installation of the EHR Connector, which costs US$480. Note: the photo will not appear in the MedTech Inbox, only the Attachments window.
 
 https://github.com/atomjump/medimage-co-nz-content-only/blob/master/ehrconnect-addon.md
 
@@ -35,3 +35,8 @@ __Note__: Our MedImage Server software does not affect a MedTech database in any
 https://github.com/atomjump/medimage-co-nz-content-only/blob/master/medtech-status.md
 
 
+## Installation Assistance
+
+While our EHR Connector software can be installed by a competent MedTech engineer who is following our documentation, there are situations when it is best if MedImage handle the installation. We offer this installation service at an additional cost of US$265, payable once the customer is happy that the installation works and does what they expect it to.
+
+https://github.com/atomjump/medimage-co-nz-content-only/blob/master/MedImage-Installation-Checklist.pdf

@@ -93,8 +93,20 @@ http://medimage.co.nz/addon-ehrconnect/
 
 To download this, click ‘Start the Free Trial’ from that page – it will take you to the download section.
 
-You can download both the Server software and the EHR Connector add-on as many times as you need to run it on your system. If you don’t find it works in with your set-up, please let us know and we’ll see how we can help. MedImage support is available if you need on-site or remote assistance in installing this. Please remember that the license is per hardware server, so you will need to purchase a new copy if you plan on running the software on a new site.
-Post Installation Set-up
+You can download both the Server software and the EHR Connector add-on as many times as you need to run it on your system. If you don’t find it works in with your set-up, please let us know and we’ll see how we can help.
+
+The MedImage installation service is available if you need on-site or remote assistance in installing this. We offer a ‘free trial’ installation also, though this installation is still paid for if you are happy to purchase the whole product. Otherwise, the installation is not billed.  
+
+https://github.com/atomjump/medimage-co-nz-content-only/blob/master/MedImage-Installation-Checklist.pdf
+
+Please remember that the license is per hardware server, so you will need to purchase a new copy if you plan on running the software on a new site.
+
+To decide on whether to use 32-bit or 64-bit versions of MedImage, you can see this handy guide, particularly for MedTech32 users.
+
+https://github.com/atomjump/medimage-co-nz-content-only/blob/master/medimage-choice-of-bits.pdf
+
+
+## Post Installation Set-up
 
 Once the installation is complete you should install your specific EHR add-on e.g. ‘MedTech32’ from the same page. If your EHR is not on the list, you will still be able to change the EHR queries to match your situation, although this takes some technical ability.
 

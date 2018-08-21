@@ -105,6 +105,9 @@ To decide on whether to use 32-bit or 64-bit versions of MedImage, you can see t
 
 https://github.com/atomjump/medimage-co-nz-content-only/blob/master/medimage-choice-of-bits.pdf
 
+__MedTech Specific__: this software will add photos into the ‘Attachments‘ window of MedTech, but __not__ the ‘Inbox’ window, which some doctors have requested.
+
+
 
 ## Post Installation Set-up
 

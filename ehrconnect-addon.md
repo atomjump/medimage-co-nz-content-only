@@ -283,5 +283,16 @@ An example medimage-installer.json file, which is documented here under the ‘W
 }
 ```
 
+#Additional Features in Ver >= 0.7.10
+The changes available in the EHR Connector >= 0.7.10 allow
+
+* interaction with SOAP XML programmer interfaces
+* interaction with JSON programmer interfaces
+* multiple SQL queries for enhanced SQL-type interaction
+* a simplified user interface
+
+To include multiple lines within a given query field use the ‘\r\n’ character codes.
+
+You will find a complete list of additional fields and their descriptions on the EHR fields page.
 
 

@@ -226,17 +226,17 @@ An example ehrconnect.json file
 
 The most crucial fields that need to be altered are testConnectionSQL, testConnectionShowField, createUserSQL, getIdSQL, insertAttachmentSQL and dbCurrentTimeSQL.
 
-* __testConnectionSQL__. Connection test query. SQL command to check the connection to the EHR database and get the last photo record added.
+* __testConnectionSQL__. Connection test query. SQL command to check the connection to the EHR database and get the last photo record added. Renamed to ‘testConnectionQuery’ for the EHR Connector >= 0.7.10, but ‘testConnectionSQL’ is still compatible.
 
 * __testConnectionShowField__. Connection test field to highlight. The table field name to show for the last record entered, once there is a successful connection test.
 
-* __createUserSQL__. Give MEDIMAGE user permissions queries. SQL command(s) to give the ‘MEDIMAGE’ user it’s permissions. Separate queries by semi-colons ‘;’. This helps differentiate who should support any associated problems.
+* __createUserSQL__. Give MEDIMAGE user permissions queries. SQL command(s) to give the ‘MEDIMAGE’ user it’s permissions. Separate queries by semi-colons ‘;’. This helps differentiate who should support any associated problems. Renamed to ‘createUserQuery’ for the EHR Connector >= 0.7.10, but ‘createUserSQL’ is still compatible.
 
-* __getIdSQL__. Get identifier query. SQL command to output the internal database patient ID from an incoming [NHID] word.
+* __getIdSQL__. Get identifier query. SQL command to output the internal database patient ID from an incoming [NHID] word. Renamed to ‘getIdQuery’ for the EHR Connector >= 0.7.10, but ‘getIdSQL’ is still compatible.
 
-* __insertAttachmentSQL__. Insert attachment query. SQL command to insert the new photo attachment into the patient record table. Words that are replaced with their correct values are ‘patientID,currentDateTime,photoname,fullphotopath,filelength,staffname,computer,location’
+* __insertAttachmentSQL__. Insert attachment query. SQL command to insert the new photo attachment into the patient record table. Words that are replaced with their correct values are ‘patientID,currentDateTime,photoname,fullphotopath,filelength,staffname,computer,location’. Renamed to ‘insertAttachmentQuery’ for the EHR Connector >= 0.7.10, but ‘insertAttachmentSQL’ is still compatible.
 
-* __dbCurrentTimeSQL__. Database Current time. SQL function representing the current time field. This may be e.g. ‘CURRENT_TIMESTAMP’.
+* __dbCurrentTimeSQL__. Database Current time. SQL function representing the current time field. This may be e.g. ‘CURRENT_TIMESTAMP’. Renamed to ‘dbCurrentTimeQuery’ for the EHR Connector >= 0.7.10, but ‘dbCurrentTimeSQL’ is still compatible.
 
  
 

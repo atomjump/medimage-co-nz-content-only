@@ -37,7 +37,8 @@ Switch this on to process and include a resized photo in your Windows folder. To
 
  
 
-EHR Connector Basic Options
+## EHR Connector Basic Options
+
 ODBC Database ‘System DSN’ name
 
 E.g. ‘medtech32’. You will find these by searching for ‘ODBC’ in the general Windows search at the bottom of your Windows desktop screen. [Code Field: dsnHere]
@@ -72,7 +73,8 @@ Whether to include a new link/entry into the patient record of your EHR system t
 
  
 
-Extended Options
+## Extended Options
+
 Local Map Down Folder 
 
 Folder path that gets replaced when the Drive letter is changed below. E.g. when this is set to ‘C:\mt32\’, a photo at C:\mt32\… would become M:\…  [Code Field: localFolderMapDown]
@@ -99,7 +101,8 @@ Will turn the patient ID entered (actually the last folder created) into a capit
 
  
 
-Advanced Options
+## Advanced Options
+
 Request Style
 
 Use a direct database connection (SQL), a SOAP XML type connection (SOAP XML), or JSON POST request (JSON). Your configuration should have been set automatically if you have a known EHR system. [Code Field: requestType]
@@ -154,7 +157,8 @@ Switch on and off logging of each photo taken. You will find the log files at C:
 
  
 
-Endpoint SOAP/JSON Options (ver >= 0.7.10)
+## Endpoint SOAP/JSON Options (ver >= 0.7.10)
+
 Check connection endpoint
 
 URL Endpoint to do a check that the connection to the EHR system is working [Code Field: testConnection]
@@ -185,7 +189,8 @@ HTTP Headers in JSON array format. The text [soapEndpoint] will be replaced with
 
  
 
-Response SOAP/JSON Options (ver >= 0.7.10)
+## Response SOAP/JSON Options (ver >= 0.7.10)
+
 Test Connection Success
 
 Object to check for success from a SOAP/JSON response e.g. id.success  [Code Field: testConnection.success]
@@ -228,7 +233,8 @@ Value to check for success from the above parameter e.g. true  [Code Field: inse
 
  
 
-SOAP/XML Sample
+## SOAP/XML Sample
+
 The following example can be found in full at https://github.com/atomjump/medimage-addon-ehr-soaptest.
 
 An example SOAP XML connection:

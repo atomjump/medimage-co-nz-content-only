@@ -39,35 +39,35 @@ Switch this on to process and include a resized photo in your Windows folder. To
 
 ## EHR Connector Basic Options
 
-ODBC Database ‘System DSN’ name
+__ODBC Database ‘System DSN’ name__
 
 E.g. ‘medtech32’. You will find these by searching for ‘ODBC’ in the general Windows search at the bottom of your Windows desktop screen. [Code Field: dsnHere]
 
-Database Host
+__Database Host__
 
 This is typically ‘localhost’, or e.g. ‘localhost:1234’, but could be any network address. [Code Field: host]
 
-Database Name
+__Database Name__
 
 The database name for your EHR installation. [Code Field: dbname]
 
-Username
+__Username__
 
 Your system-wide database or connection username. If this is a database connection, after a successful connection you would often create a new MedImage-specific user to avoid invalidating any EHR support warranties. [Code Field: username]
 
-Password
+__Password__
 
 Your database or connection password. [Code Field: password]
 
-Photo Folder
+__Photo Folder__
 
 The MedImage server location for your photos. E.g. c:\mt32\attachments. These will be predefined by your MedImage Server target folder settings. [Code Field: parentPhotoDir]
 
-Insert Original Photo
+__Insert Original Photo__
 
 Whether to include a new link/entry into the patient record of your EHR system to the original photo, or not. [Code Field: useOriginal]
 
-Insert Resized Photo
+__Insert Resized Photo__
 
 Whether to include a new link/entry into the patient record of your EHR system to the resized photo, or not. If this is ticked, you must also tick ‘Resize Photos’ to ‘On’ in the Resize tab. [Code Field: useResized]
 
@@ -75,27 +75,27 @@ Whether to include a new link/entry into the patient record of your EHR system t
 
 ## Extended Options
 
-Local Map Down Folder 
+__Local Map Down Folder__ 
 
 Folder path that gets replaced when the Drive letter is changed below. E.g. when this is set to ‘C:\mt32\’, a photo at C:\mt32\… would become M:\…  [Code Field: localFolderMapDown]
 
-Maps Down To
+__Maps Down To__
 
 Folder that replaces the folder path above when added to the EHR database. Useful if you use a ‘mapped’ network drive. [Code Field: mapDownTo]
 
-Location
+__Location__
 
 Short description of the location. [Code Field: location]
 
-Staff Name
+__Staff Name__
 
 Identifies the staff member who has added the attachment, but will be the same for all MedImage photos. [Code Field: staffname]
 
-Computer
+__Computer__
 
 Identifies which computer has added the attachment, but will be the same for all MedImage photos. [Code Field: computer]
 
-Auto-capitalise the Patient ID
+__Auto-capitalise the Patient ID__
 
 Will turn the patient ID entered (actually the last folder created) into a capitalized version. This prevents different users from entering different versions of the ID and the system creating different Windows folders. [Code Field: capitaliseNHID]
 
@@ -103,55 +103,55 @@ Will turn the patient ID entered (actually the last folder created) into a capit
 
 ## Advanced Options
 
-Request Style
+__Request Style__
 
 Use a direct database connection (SQL), a SOAP XML type connection (SOAP XML), or JSON POST request (JSON). Your configuration should have been set automatically if you have a known EHR system. [Code Field: requestType]
 
-Connection Style
+__Connection Style__
 
 Use an ODBC connection, or you can use a ‘native’ SQL Server connection, if that is your database. [Code Field: useODBC]
 
-HTTP Method
+__HTTP Method__
 
 Do a GET or POST http(s) request. [Code Field: httpMethod]
 
-Photo file path match
+__Photo file path match__
 
 Regular expression that splits a photo path up into components. Use double back-slashes for folder breaks i.e. ‘\\’, and (.*) for each component. [Code Field: photoPathMatch]
 
-Order of components in path
+__Order of components in path__
 
 Take each component from the ‘Photo file path match’ expression above, and replace them in this order. Separate with commas. Standard component names are ‘parentphotodir’, ‘NHID’, ‘photoname’. [Code Field: photoVars]
 
-Connection test query
+__Connection test query__
 
 Query command to check the connection to the EHR database and get the last photo record added. SQL or SOAP XML. [Code Field: testConnectionQuery, or < v0.7.10, testConnectionSQL]
 
-Connection test field to highlight
+__Connection test field to highlight__
 
 The table field name to show for the last record entered, once there is a successful connection test. [Code Field: testConnectionShowField]
 
-Give MEDIMAGE user permissions queries
+__Give MEDIMAGE user permissions queries__
 
 Query command(s) to give the ‘MEDIMAGE’ user it’s permissions. SQL or SOAP XML. Separate SQL queries by semi-colons ‘;’. This helps differentiate who should support any associated problems. [Code Field: createUserQuery, or < v0.7.10, createUserSQL]
 
-Get identifier query (Optional)
+__Get identifier query (Optional)__
 
 Query command to output the internal database patient ID from an incoming [ID] word. SQL or SOAP XML. The [ID] is replaced with the first word entered in the app. You should return the patient ID in SQL as PATIENTID e.g. SELECT [your field] AS PATIENTID FROM … [Code Field: getIdQuery]
 
-Insert attachment query
+__Insert attachment query__
 
 Query command to insert the new photo attachment into the patient record table. SQL or SOAP XML. Words that are replaced with their correct values are ‘patientID,currentDateTime,photoname,fullphotopath,filelength,staffname,computer,location’ [Code Field: insertAttachmentQuery, or < v0.7.10, insertAttachmentSQL]
 
-Database Current time
+__Database Current time__
 
 Query function representing the current time field. SQL or SOAP XML. This may be e.g. ‘CURRENT_TIMESTAMP’. This is useful to tell the database when the entry was added. [Code Field: dbCurrentTimeQuery, or < v0.7.10, dbCurrentTimeSQL]
 
-Error Notification URL
+__Error Notification URL__
 
 A notification URL that is called when there is an error. For example, the script at the URL may email the practice admin with the error. Include the text [MESSAGE] in the URL to be replaced with the actual error message. [Code Field: errorNotificationURL]
 
-Log Results
+__Log Results__
 
 Switch on and off logging of each photo taken. You will find the log files at C:\MedImage\addons\ehrconnect\log\ehr_connect.log and C:\MedImage\addons\ehrconnect\log\ehr_connect_full.log. The basic log shows a success/error message, while the full log shows queries run behind the scenes and other processing on each photo. [Code Field: logging]
 
@@ -159,31 +159,31 @@ Switch on and off logging of each photo taken. You will find the log files at C:
 
 ## Endpoint SOAP/JSON Options (ver >= 0.7.10)
 
-Check connection endpoint
+__Check connection endpoint__
 
 URL Endpoint to do a check that the connection to the EHR system is working [Code Field: testConnection]
 
-Get identifier endpoint (Optional)
+__Get identifier endpoint (Optional)__
 
 URL Endpoint to get an internal identifier from an external public-facing identifier. E.g. ‘NHI1234’ returns a system-level patient ID of ‘4245467’. Use [ID] in the URL to be replaced with the actual ID entered, e.g. https://localhost/?id=[ID].  [Code Field: getId]
 
-Insert attachment endpoint
+__Insert attachment endpoint__
 
 URL Endpoint to insert a photo record. Words that are replaced with their correct values are [patientID],[currentDateTime],[photoname],[fullphotopath],[filelength],[staffname],[computer],[location],[sessionID].  [Code Field: insertAttachment]
 
-Include the photo in the insert attachment request
+__Include the photo in the insert attachment request__
 
 This will do a mult-part POST request, with the photo file attached along with the photo record request. [Code Field: includePhotoInPOST]
 
-SSL Certificate File
+__SSL Certificate File__
 
 Local file path for SSL .pem certificate file. [Code Field: sslCertFile]
 
-Timeout Failure Period
+__Timeout Failure Period__
 
 In milliseconds e.g. 2000 = 2 seconds. [Code Field: timeoutFailureMs]
 
-HTTP Headers
+__HTTP Headers__
 
 HTTP Headers in JSON array format. The text [soapEndpoint] will be replaced with the endpoint used above, and [contentLength] will be replaced with the length of the content being sent. [Code Field: headers]
 
@@ -191,43 +191,43 @@ HTTP Headers in JSON array format. The text [soapEndpoint] will be replaced with
 
 ## Response SOAP/JSON Options (ver >= 0.7.10)
 
-Test Connection Success
+__Test Connection Success__
 
 Object to check for success from a SOAP/JSON response e.g. id.success  [Code Field: testConnection.success]
 
-Test Connection Success Value
+__Test Connection Success Value__
 
 Value to check for success from the above parameter e.g. true  [Code Field: testConnection.successValue]
 
-Get ID Success (Optional)
+__Get ID Success (Optional)__
 
 Object to check for success from a SOAP/JSON response e.g. id.success  [Code Field: getId.success]
 
-Get ID Success Value (Optional)
+__Get ID Success Value (Optional)__
 
 Value to check for success from the above parameter e.g. true [Code Field: getId.successValue]
 
-Get ID Returned Value (Optional)
+__Get ID Returned Value (Optional)__
 
 Returned object that holds the ID itself e.g. id.value [Code Field: getId.returnedValue]
 
-Get ID Session Value (Optional)
+__Get ID Session Value (Optional)__
 
 Returned object that holds an optional session ID, valid for the following requests in this session e.g. id.session  [Code Field: getId.sessionValue]
 
-Get ID Determine a Duplicate (Optional)
+__Get ID Determine a Duplicate (Optional)__
 
 Object to check to determine there is a duplicate of this input ID, from a SOAP/JSON response e.g. id.duplicate  [Code Field: getId.duplicate]
 
-Get ID Duplicate Value (Optional)
+__Get ID Duplicate Value (Optional)__
 
 Value to check for from the above object parameter e.g. ‘true’, to determine a duplicate.  [Code Field: getId.duplicateValue]
 
-Insert Attachment Success
+__Insert Attachment Success__
 
 Object to check for success from a SOAP/JSON response e.g. id.success  [Code Field: insertAttachment.success]
 
-Insert Attachment Success Value
+__Insert Attachment Success Value__
 
 Value to check for success from the above parameter e.g. true  [Code Field: insertAttachment.successValue]
 

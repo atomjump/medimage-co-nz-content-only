@@ -111,9 +111,13 @@ __MedTech Specific__: this software will add photos into the ‘Attachments‘ w
 
 ## Post Installation Set-up
 
-Once the installation is complete you should install your specific EHR add-on e.g. ‘MedTech32’ from the same page. If your EHR is not on the list, you will still be able to change the EHR queries to match your situation, although this takes some technical ability.
+1. Once the installation is complete you should install your specific EHR add-on e.g. ‘MedTech32’ from the same page. 
 
-You should click the ‘EHR Connector Add-on’ tab to start configuring and testing the connection.
+__IE Browser Specific Note__: usually a a prompt will appear in the browser to explain that you need to install the EHR specific add-on. Depending on the security settings of an IE browser, however, this message may not appear. If not, you should find the EHR specific add-on, right click, copy the URL, and paste this address into your Settings / Addons page within the MedImage Server. Then click ‘Download and Install’.
+
+If your EHR is not on the list, you will still be able to change the EHR queries to match your situation, although this takes some technical ability.
+
+2. You should then click the ‘EHR Connector Add-on’ tab to start configuring and testing the connection.
 
 If your queries have not been set up for your specific type of EHR (i.e. you have not installed a specific EHR add-on), your should re-write these in the ‘Advanced options’ section, before going any further.
 
@@ -125,6 +129,7 @@ The general approach here is to configure, ‘Save & Check connection’, config
 
 You can preview the ‘Show Extended options’ in this picture, and the ‘Advanced Options’ in this picture.
 
+__Useful Tip__: After you have set up the MedImage Server and EHR Connector, it is often a good idea to create a desktop shortcut on the client PCs, to either the EHR Log page, for error feedback, or the phone syncing result page if a variable number of people might want to sync in to the Server.
  
 
 ## Setting up ODBC

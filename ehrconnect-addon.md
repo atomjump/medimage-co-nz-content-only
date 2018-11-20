@@ -295,4 +295,6 @@ To include multiple lines within a given query field use the ‘\r\n’ characte
 
 You will find a complete list of additional fields and their descriptions on the EHR fields page.
 
+https://github.com/atomjump/medimage-co-nz-content-only/blob/master/ehr-connect-fields.md
+
 

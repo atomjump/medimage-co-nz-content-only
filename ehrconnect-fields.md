@@ -11,27 +11,27 @@ This repository is a public copy of the important content on http://medimage.co.
 ## Resize Options
 The Resize Options are available on a separate ‘Resize’ tab inside the MedImage Settings.
 
-*Width
+__Width__
 
 In pixels, or ‘auto’ to keep aspect ratio of original, based off the height
 
-*Height
+__Height__
 
 In pixels, or ‘auto’ to keep aspect ratio of original, based off the width
 
-Quality
+__Quality__
 
 Of the resized image, as a percentage 0 – 100 (Tip: high quality = more storage)
 
-Photo filename text to replace..
+__Photo filename text to replace..__
 
 The part of the filename to rename e.g. ‘.jpg’
 
-.. with this
+__.. with this__
 
 What to rename the above field’s contents to in the filename e.g. ‘-small.jpg’. Note: if you enter this as the same as the field above i.e. ‘.jpg’, then the resize photo will replace the original photo, which is a useful way to save disk space (if you don’t need the original quality photo).
 
-Resize Photos
+__Resize Photos__
 
 Switch this on to process and include a resized photo in your Windows folder. To actually insert the photo in your EHR system, please check the EHR Connector tab, under Basic Options / Insert Original Photo and Insert Resized Photo.
 

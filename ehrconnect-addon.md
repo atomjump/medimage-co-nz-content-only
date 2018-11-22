@@ -175,6 +175,37 @@ The idea is that you enter a script’s internet URL which is called remotely wh
 We have an existing AtomJump Messenger (https://atomjump.com/) script for this purpose, that sends a secure message, and can give this URL out to customers of the service. Please contact us for further details. However, many people will want to have their own customized setup. We recommend SMTP2GO (https://www.smtp2go.com/) as a reliable email sender to handle outgoing mails from your MedImage Server.
 
 
+# Advanced Configurations
+
+In many circumstances, you will want your files to appear in this format:
+
+```
+C:\PathToPhotosFolder\IDFolder\Filename.jpg
+```
+
+However, if you are using sub-folders to represent parts of the body i.e.
+
+```
+C:\PathToPhotosFolder\IDFolder\BodyPartSubfolder\Filename.jpg
+```
+
+then you will likely want to use the following inside the EHR Connector tab, under the Advanced settings:
+
+Photo file path match:
+
+```
+(.*)\\(.*)\\(.*)\\(.*)\.(jpg|mp4|mp3|pdf)
+```
+
+Order of components in path:
+
+```
+parentphotodir,NHID,subfolder,photoname
+```
+
+where the orange text is additional to the standard settings.
+
+
 
 # Developers: Building Your Own
 

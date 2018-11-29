@@ -186,7 +186,7 @@ Within the settings/Wound tab, you will find an 'Export' button. This will expor
 
 Included fields are:
 
-Filename, Id, Subfolder, WoundName, AreaSqCm, ImprovePerc, Period, Status, ServerDateTime
+Filename, Id, Subfolder, WoundName, AreaSqCm, ExternalSqCm, UnderminingSqCm, ImprovePerc, Period, Status, ExternalImprovePerc, UnderminingImprovePerc, ServerDateTime
 
 
 ## Meta-Data Fields
@@ -199,9 +199,13 @@ __Subfolder__ is a second folder name for subcategorizations e.g. leg or arm. In
 
 __WoundName__ is the name of the wound. In the app you would enter e.g. 'id woundname', or 'id #subfolder woundname' to get this.
 
-__AreaSqCm__ is the area in square centimeters, if known, of the wound. Other messages, such as '[Please draw around the sticker]' can appear in here.
+__AreaSqCm__ is the area in square centimeters, if known, of the wound. Other messages, such as '[Please draw around the sticker]' can appear in here. If there is any wound undermining (i.e. under the skin wounds), then this is the combined external and undermining area.
 
-__ImprovePerc__ is the percentage improvement of the area of the wound. It is calculated from the photos in this folder, since the time of the first photo in the folder. If some areas of the photos are not known, they are not included in this calculation.
+__ExternalSqCm__ is the area in square centimeters, if known, of the external wound (as opposed to the undermining, internal wound). If this is not applicable, because there is no undermining wound, it will be '[NA]'.
+
+__UnderminingSqCm__ is the area in square centimeters, if known, of the undermining wound. (i.e. under the skin).  If this is not applicable, because there is no undermining wound, it will be '[NA]'.
+
+__ImprovePerc__ is the percentage improvement of the area of the wound. It is calculated from the photos in this folder, since the time of the first photo in the folder. If some areas of the photos are not known, they are not included in this calculation. If there is any wound undermining (i.e. under the skin wounds), then this is the combined external and undermining improvement.
 
 __Period__ is the period since the wound was first photographed. This is calculated from the ServerDateTime field, and is in English e.g. '1 day' or '2 months and 10 days'. Technical Note: be careful if you copy your photos to a different server, that you retain their 'date-created' information, at the operating system level. E.g. in Linux, use the '-p' option when copying a folder i.e.
 
@@ -212,6 +216,12 @@ cp -Rp * newphotosfolder
 
 __Status__ can be 'recovering', 'recovered', or 'warning'. Recovering means the wound is getting better. Recovered means they have fully recovered ( > 97% improvement). Warning means the wound is getting worse, or has not improved by more than 30% after two weeks.
 
+__ExternalImprovePerc__ is the percentage improvement of the area of the external wound, by itself (as opposed to the undermining wound). It is calculated from the photos in this folder, since the time of the first photo in the folder. If some areas of the photos are not known, they are not included in this calculation. If this is not applicable, because there is no undermining wound, it will be '[NA]'.
+
+__ImproveUnderminingPerc__ is the percentage improvement of the area of the undermining wound (i.e. under the skin), by itself. It is calculated from the photos in this folder, since the time of the first photo in the folder. If some areas of the photos are not known, they are not included in this calculation. If this is not applicable, because there is no undermining wound, it will be '[NA]'.
+
 __ServerDateTime__ is the time in GMT (Greenwich Mean Time) that the server recorded the photograph. This could be offset from the time-stamp in the file name itself by up to a day due to different time-zones, or a few seconds due to the delay between the photo transferring from the phone to the server.
+
+
 
 

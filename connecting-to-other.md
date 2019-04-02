@@ -23,7 +23,7 @@ https://github.com/atomjump/medimage-co-nz-content-only/blob/master/other-addons
 
 Please contact atomjumpcom AT gmail.com for further details of Add-ons.
 
-3. Use the commercially available general purpose EHR Connector Add-on, which is available below, that connects directly to a number of EHR databases and inserts the photos. If your chosen system is not already supported: provided you have some DBA experience, and your system has an accessible database, you can customize this package relatively quickly to suit your own systems.
+3. Use the commercially available general purpose EHR Connector Add-on, which is available below, that connects directly to a number of EHR databases and inserts the photos. If your chosen system is not already supported: provided you have some integration or DBA experience, and your system has an accessible API or database, you can customize this package relatively quickly to suit your own systems.
 
 https://github.com/atomjump/medimage-co-nz-content-only/blob/master/ehrconnect-addon.md
 

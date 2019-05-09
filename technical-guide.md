@@ -200,6 +200,14 @@ https://github.com/atomjump/medimage-co-nz-content-only/blob/master/medImageInst
 https://github.com/atomjump/medimage-co-nz-content-only/blob/master/MedImagePrimaryHealth.pdf
 
 
+One common scenario within a single practice:
+
+* A single Windows hardware server
+* Multiple Windows desktop PCs
+* A single MedImage Server installed on the Windows server
+* Each desktop has a desktop link to the IP address/URL of the MedImage Server, to either the homepage of the MedImage Server or to the page that generates a 4-digit connection code immediately (and/or the EHR Log if the EHR Connector is installed)
+
+
 
 ## Troubleshooting
 

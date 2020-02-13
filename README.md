@@ -14,9 +14,7 @@ You will likely have problems __pairing new users__ today, but you should __stil
 https://d341jjd9xbzxpk.cloudfront.net/MedImageServ-PatchInstaller.exe?ver=1.7.6 
 https://d341jjd9xbzxpk.cloudfront.net/MedImageServ-Patch32Installer.exe?ver=1.7.6
 
-
-
-
+# END OF MESSAGE
 
 Welcome to MedImage. The smartest medical imaging app on the planet  
 

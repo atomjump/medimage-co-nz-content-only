@@ -6,7 +6,7 @@
 This repository is a public copy of the important content on http://medimage.co.nz,  in case the servers should be down.
 
 
-# FRONT WEBSITE SERVER STATUS : Down
+# WEBSITE SERVER STATUS : Down
 Due to an unexpected load on our front-end servers this morning, our website is __down 14 Feb 2020__. We aim to recover it later today.
 
 You will likely have problems __pairing new users__ today, but you should __still be able to transfer photos__. However, you can install this 1.7.6 patch on your server to resolve the pairing issue (note: this is a recommended step, regardless):

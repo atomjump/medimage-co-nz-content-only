@@ -6,6 +6,17 @@
 This repository is a public copy of the important content on http://medimage.co.nz,  in case the servers should be down.
 
 
+# MEDIMAGE.CO.NZ SERVER STATUS : Down
+Due to an unexpected load on our front-end servers this morning, our website is down 14 Feb 2020. We aim to recover it later today.
+
+You will likely have problems pairing new users today, but you should still be able to transfer photos. However, you can install this 1.7.6 patch on your server to resolve the issue (note: this is a recommended step, regardless):
+
+https://d341jjd9xbzxpk.cloudfront.net/MedImageServ-PatchInstaller.exe?ver=1.7.6 
+https://d341jjd9xbzxpk.cloudfront.net/MedImageServ-Patch32Installer.exe?ver=1.7.6
+
+
+
+
 
 Welcome to MedImage. The smartest medical imaging app on the planet  
 

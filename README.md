@@ -9,10 +9,12 @@ This repository is a public copy of the important content on http://medimage.co.
 # WEBSITE SERVER STATUS : Down
 Due to an unexpected load on our front-end servers this morning, our website is __down 14 Feb 2020__. We aim to recover the site later today.
 
-You will likely have problems __pairing new users__ today, but you should __still be able to transfer photos__. However, you can install this 1.7.6 patch on your server to resolve the pairing issue (note: this is a recommended step, regardless):
+You will likely have problems __pairing new users__ today, but you should __still be able to transfer photos__. However, you can install this 1.7.6 patch on your server to help resolve the pairing issue (note: this is a recommended step, regardless):
 
 https://d341jjd9xbzxpk.cloudfront.net/MedImageServ-PatchInstaller.exe?ver=1.7.6 
 https://d341jjd9xbzxpk.cloudfront.net/MedImageServ-Patch32Installer.exe?ver=1.7.6
+
+__Android users__ have a new version of the app out today which will allow pairing from this new server, but __iPhone users__ will need to wait up to 2 days before pairing will work against this new server (unless we resolve the main server issues above).
 
 You should find other text from the website, available here.
 

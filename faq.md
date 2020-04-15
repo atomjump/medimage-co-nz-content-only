@@ -184,3 +184,23 @@ __Q. Can I use a cloud-hosted system e.g. MedTech in the cloud?__
 A. Yes, MedImage works equally well in this environment. The only difference is that you won’t be able to use the local WiFi option for transferring images, which is not generally recommended practice, anyway.
 
  
+__Q. Some of the MedImage Server settings aren’t showing on my browser. What can I do?__
+
+A. This can happen if you are using Internet Explorer on a Windows Server, and it depends on the security settings of the IE browser. While you can make adjustments to the security settings of IE via the Server Manager (to allow it to open local URLs in scripts), it is generally easier to simply install or run a different browser e.g. Firefox or Chrome which should work by default. Note: To download and install these, you may also need to adjust the security settings on IE.
+
+ 
+__Q. How do I block a phone from sending photos to a server if they leave the practice?__
+
+A. You will ideally have access to their phone, and can then go into the app, tap ‘Settings’ and tap the ‘rubbish’ icon next to the connection to your server. Alternatively you can uninstall their app or tap the ‘reset factory settings’ link in the ‘Settings’ page within the app, although this may interrupt other connections that person has to different PCs outside of your practice.
+
+One more extreme option is to delete the C:\MedImage\config.json file of the server and reinstall the MedImage server. Existing users will need to reconnect, in this case.
+
+ 
+__Q. My iPhone sends the image, the photo reaches 100%, but it doesn’t appear on the server?__
+
+A. We’ve noticed this issue on some modern iPhones, which are trying to send photos in HEIF format rather than JPEG format. To fix this:
+
+* Open the “Settings” app on the iPhone and go to “Camera”
+* Choose “Formats” and select “Most Compatible” to shoot photos in JPEG format on the iPhone camera.
+* Exit out of Settings.
+ 

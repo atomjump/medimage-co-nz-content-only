@@ -200,6 +200,23 @@ https://src.atomjump.com/atomjump/medimage-co-nz-content-only/blob/master/medIma
 https://src.atomjump.com/atomjump/medimage-co-nz-content-only/blob/master/MedImagePrimaryHealth.pdf
 
 
+One common scenario within a single practice:
+
+* A single Windows hardware server
+* Multiple Windows desktop PCs
+* A single MedImage Server installed on the Windows server
+* Each desktop has a desktop link to the IP address/URL of the MedImage Server, to either the homepage of the MedImage Server or to the page that generates a 4-digit connection code immediately (and/or the EHR Log if the EHR Connector is installed)
+
+## Post Installation Options
+
+* Creating a shortcut on the desktop
+
+Often the MedImage Server is kept on a central Windows server, and there are a number of client desktop PCs which need to have a view of that software on that server. This is most conveniently done by created a URL desktop shortcut with the URL to the MedImage Server on it on the desktop machine. E.g. ‘http://yourwindowsserver:5566’. Some users choose to point this desktop icon at the ‘generate a new 4 digit code’ page, to allow an easy intro for any new doctors. Note: you may want to put the software into ‘lockDown’ mode before spreading this across all users (see Options above).
+
+* Lock Down Mode
+
+‘Lock-down’ mode prevents any users from changing settings through the web interface, such as the target folder of MedImage, installing new add-ons, or seeing any technical logs. You need to have access to the server at a file level, and be able to edit text files to switch this on and off. Notepad++ is a recommended Windows tool for this.
+
 
 ## Troubleshooting
 

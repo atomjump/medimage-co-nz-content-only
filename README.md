@@ -5,8 +5,6 @@
 # medimage-co-nz-content-only
 This repository is a public copy of the important content on http://medimage.co.nz,  in case the servers should be down.
 
-
-
 Welcome to MedImage. The smartest medical imaging app on the planet  
 
 Email: sales AT medimage.co.nz  (Or atomjumpcom AT gmail.com)
@@ -84,6 +82,11 @@ https://src.atomjump.com/atomjump/medimage-co-nz-content-only/blob/master/guide.
 ## Brochure
 
 https://src.atomjump.com/atomjump/medimage-co-nz-content-only/blob/master/MedImageBrochure.pdf
+
+
+## Video
+
+https://www.youtube.com/watch?v=UAq_2lWUg-8
 
 
 ## Service Status

@@ -14,7 +14,7 @@ MedTech is a common medical system found within New Zealand practices, but also 
 To connect to MedTech32 you have two options:
 
 1. Send the photos to the attachments folder, and manually add the photos to the patient record from within MedTech32. This option uses the free MedImage Server software, which will automatically set the correct target folder to C:\mt32\attachments during installation.
-2. Purchase the EHR Connector MedImage Add-on software which, along with the EHR MedTech32 addition, will add each new photo directly into the MedTech32 database system, becoming visible from within the Attachments window of the patient record within a few seconds. There is a one-time license fee per installation of the EHR Connector, which costs US$480. Note: the photo will not appear in the MedTech32 Inbox, only the Attachments window.
+2. Purchase the EHR Connector MedImage Add-on software which, along with the EHR MedTech32 addition, will add each new photo directly into the MedTech32 database system, becoming visible from within the Attachments window of the patient record within a few seconds. There is a one-time license fee per installation of the EHR Connector, which costs US$480. Note: the photo link will only be clickable within the Attachments window, but a note on the Patient Manager 'Daily Record' section will also appear.
 
 More details for this Add-on are here: 
 

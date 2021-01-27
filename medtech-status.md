@@ -23,8 +23,8 @@ Each time a photo is sent to the PC, two queries are run against the MedTech dat
 
 All of our queries against the MedTech databases are available for public peer review for both MedTech32 and MedTech Evolution versions. We welcome suggestions and improvements to these from anyone.
 
-https://github.com/atomjump/medimage-addon-ehr-medtech32/blob/master/ehrconnect.json
-https://github.com/atomjump/medimage-addon-ehr-medtech-evolution/blob/master/ehrconnect.json 
+https://src.atomjump.com/atomjump/medimage-addon-ehr-medtech32/blob/master/ehrconnect.json
+https://src.atomjump.com/atomjump/medimage-addon-ehr-medtech-evolution/blob/master/ehrconnect.json 
  
 
 __Q. Do you have any working installations of your add-on?__

@@ -118,4 +118,4 @@ message, if the file has gone through, and after 10 seconds, you should see the 
 
 The MedImage App source code is available to browse at GitHub:
 
-https://github.com/atomjump/medimage
+https://src.atomjump.com/atomjump/medimage

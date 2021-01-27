@@ -22,7 +22,7 @@ There is no cost in building or publishing an add-on, although we cannot guarant
 
 Since MedImage is an open-source platform, we believe it will have a stable future.
 
-You can also opt to build your own client app or software that writes into the MedImage Server.  https://github.com/atomjump/medimage-co-nz-content-only/blob/master/develop-own-client.md
+You can also opt to build your own client app or software that writes into the MedImage Server.  https://src.atomjump.com/atomjump/medimage-co-nz-content-only/blob/master/develop-own-client.md
  
 
 ## Getting Started
@@ -30,7 +30,7 @@ You can also opt to build your own client app or software that writes into the M
 At the current time, i.e. 2 Dec 2017, download the MedImage Server 1.3.3. Or for non-Windows installations, use the ‘git clone’ approach to get the latest server. i.e
 
 ```
-git clone https://github.com/atomjump/medimageserv.git
+git clone https://src.atomjump.com/atomjump/medimageserv.git
 cd medimageserv
 npm install
 node bin/server.js
@@ -416,6 +416,6 @@ Note: one session entry is stored in RAM indefinitely for each user’s browser 
 
 The MedImage Add-on for resizing photos is a good starter framework for those wanting to develop in NodeJS. The source code is available from:
 
-https://github.com/atomjump/medimage-addon-resize
+https://src.atomjump.com/atomjump/medimage-addon-resize
 
 You’re welcome to include the same code in your own project, and modify it to suit your needs.

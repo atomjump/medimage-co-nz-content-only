@@ -97,13 +97,13 @@ You can download both the Server software and the EHR Connector add-on as many t
 
 The MedImage installation service is available if you need on-site or remote assistance in installing this. We offer a ‘free trial’ installation also, though this installation is still paid for if you are happy to purchase the whole product. Otherwise, the installation is not billed.  
 
-https://github.com/atomjump/medimage-co-nz-content-only/blob/master/MedImage-Installation-Checklist.pdf
+https://src.atomjump.com/atomjump/medimage-co-nz-content-only/blob/master/MedImage-Installation-Checklist.pdf
 
 Please remember that the license is per hardware server, so you will need to purchase a new copy if you plan on running the software on a new site.
 
 To decide on whether to use 32-bit or 64-bit versions of MedImage, you can see this handy guide, particularly for MedTech32 users.
 
-https://github.com/atomjump/medimage-co-nz-content-only/blob/master/medimage-choice-of-bits.pdf
+https://src.atomjump.com/atomjump/medimage-co-nz-content-only/blob/master/medimage-choice-of-bits.pdf
 
 __MedTech Specific__: this software will add photos into the ‘Attachments‘ window of MedTech, but __not__ the ‘Inbox’ window, which some doctors have requested.
 
@@ -326,6 +326,6 @@ To include multiple lines within a given query field use the ‘\r\n’ characte
 
 You will find a complete list of additional fields and their descriptions on the EHR fields page.
 
-https://github.com/atomjump/medimage-co-nz-content-only/blob/master/ehrconnect-fields.md
+https://src.atomjump.com/atomjump/medimage-co-nz-content-only/blob/master/ehrconnect-fields.md
 
 

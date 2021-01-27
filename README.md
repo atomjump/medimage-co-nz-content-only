@@ -23,7 +23,7 @@ Privacy requires security. Images are stored only for as long as is essential fo
 
 * Download Links. 
 Download MedImage for Windows, the MedImage proxy server, or the app for Android/iPhone.
-https://github.com/atomjump/medimage-co-nz-content-only/blob/master/download-links.md
+https://src.atomjump.com/atomjump/medimage-co-nz-content-only/blob/master/download-links.md
 
 * Simple. 
 So simple to use – less than 2 minutes to install and pair with your phone.
@@ -78,12 +78,12 @@ https://youtu.be/zYee0anPr60
 
 ## More details
 
-https://github.com/atomjump/medimage-co-nz-content-only/blob/master/guide.md
+https://src.atomjump.com/atomjump/medimage-co-nz-content-only/blob/master/guide.md
 
 
 ## Brochure
 
-https://github.com/atomjump/medimage-co-nz-content-only/blob/master/MedImageBrochure.pdf
+https://src.atomjump.com/atomjump/medimage-co-nz-content-only/blob/master/MedImageBrochure.pdf
 
 
 ## Service Status
@@ -92,5 +92,5 @@ http://medimagestatus.atomjump.com/?autostart=true
 
 ## Prices
 
-https://github.com/atomjump/medimage-co-nz-content-only/blob/master/prices.md
+https://src.atomjump.com/atomjump/medimage-co-nz-content-only/blob/master/prices.md
 

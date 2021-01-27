@@ -235,7 +235,7 @@ Value to check for success from the above parameter e.g. true  [Code Field: inse
 
 ## SOAP/XML Sample
 
-The following example can be found in full at https://github.com/atomjump/medimage-addon-ehr-soaptest.
+The following example can be found in full at https://src.atomjump.com/atomjump/medimage-addon-ehr-soaptest.
 
 An example SOAP XML connection:
 ```

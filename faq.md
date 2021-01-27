@@ -61,7 +61,7 @@ __Q. Can I sync to a network folder?__
 
 A. Yes, when you install the server, you have the choice of which folder to write to, and this can be a network folder. You can also choose to add additional backup folders if you have some technical configuration skill. Please note: the user that installs the MedImage Server must have administrative privileges, and be able to read and write to the target network folder.  Any network drive mappings should be available to the user that installed MedImage Server, when run as a background service, but if not, you can use the network path e.g. \\server\folder format. Also see the Technical Guide for further troubleshooting tips.
 
-https://github.com/atomjump/medimage-co-nz-content-only/blob/master/technical-guide.md
+https://src.atomjump.com/atomjump/medimage-co-nz-content-only/blob/master/technical-guide.md
 
 
 __Q. I have looked at setting up a cloud proxy server, but it looks difficult. Can you help?__
@@ -74,7 +74,7 @@ __Q. How does the app transfer the image?__
 
 A. The app uses Wifi, if available and desired, and if not, it will transfer via your 3G or 4G mobile data connection. See a detailed transfer explanation here:
 
-https://github.com/atomjump/medimage-co-nz-content-only/blob/master/how-does-it-work.md
+https://src.atomjump.com/atomjump/medimage-co-nz-content-only/blob/master/how-does-it-work.md
 
 Note: 3G or 4G connections have standard data transfer fees depending on your mobile provider.
 
@@ -170,7 +170,7 @@ A. Make sure you have a working database connection (under ‘Settings/EHR Conne
 
 The correct format from within the app is ‘[Patient ID number] [injury name]’, for example ‘BGDH1233 arm’, or if you have the app option ‘ID writes a folder’ off, you can enter e.g. ‘#BGDH1233 arm’. Please refer to the full user guide of the EHR Connector Add-on:
 
-https://github.com/atomjump/medimage-co-nz-content-only/blob/master/ehrconnect-addon.md
+https://src.atomjump.com/atomjump/medimage-co-nz-content-only/blob/master/ehrconnect-addon.md
 
 
 __Q. Can I remove the original full-sized photo when using the Resizer add-on?__

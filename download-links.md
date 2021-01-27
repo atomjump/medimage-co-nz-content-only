@@ -24,7 +24,7 @@ https://s3-us-west-2.amazonaws.com/medimage-nz/MedImageInstaller32.exe
 
 * For Mac
 http://medimage.co.nz/medimage-server-mac-installation/
-Or https://github.com/atomjump/medimage-co-nz-content-only/blob/master/mac-installation.md
+Or https://src.atomjump.com/atomjump/medimage-co-nz-content-only/blob/master/mac-installation.md
 
 * For linux
 https://www.npmjs.com/package/medimage

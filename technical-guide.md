@@ -14,7 +14,7 @@ This repository is a public copy of the important content on http://medimage.co.
 
 Note: this section requires technical and system administration knowledge.
 
-<img src="https://github.com/atomjump/medimage-co-nz-content-only/blob/master/medimage-proxy.png">
+<img src="https://src.atomjump.com/atomjump/medimage-co-nz-content-only/blob/master/medimage-proxy.png">
 
 What you will need: a linux (or Windows) web server with an incoming and outgoing internet connection. Any number of client Windows PCs potentially in different physical premises.
 
@@ -23,7 +23,7 @@ The setup: your server will receive photos over 3G or 4G wireless from your doct
 
 ## Proxy Setup
 
-On your internet server, first install NodeJS and npm. See these install scripts, under the section ‘Node.js v4.x’, but there are multiple ways to do this depending on your platform e.g. MacOSX specific instructions are here https://github.com/atomjump/medimage-co-nz-content-only/blob/master/mac-installation.md. Note, Windows server users can install the same Windows 64-bit installer that client PCs use and do not need to follow the steps in this section below, however there are some configuration options which are slightly different (see Windows Binary Proxy Setup below).
+On your internet server, first install NodeJS and npm. See these install scripts, under the section ‘Node.js v4.x’, but there are multiple ways to do this depending on your platform e.g. MacOSX specific instructions are here https://src.atomjump.com/atomjump/medimage-co-nz-content-only/blob/master/mac-installation.md. Note, Windows server users can install the same Windows 64-bit installer that client PCs use and do not need to follow the steps in this section below, however there are some configuration options which are slightly different (see Windows Binary Proxy Setup below).
 
 Then
 
@@ -188,16 +188,16 @@ Note: The green values should be the same within any one config file.
 Here are some possible configurations for integration with your existing medical systems:
 
 * MedImage server on each PC
-https://github.com/atomjump/medimage-co-nz-content-only/blob/master/medImageInstallOption1.pdf
+https://src.atomjump.com/atomjump/medimage-co-nz-content-only/blob/master/medImageInstallOption1.pdf
 
 * MedImage Server on each PC, with your own proxy server
-https://github.com/atomjump/medimage-co-nz-content-only/blob/master/medImageInstallOption2.pdf
+https://src.atomjump.com/atomjump/medimage-co-nz-content-only/blob/master/medImageInstallOption2.pdf
 
 * MedImage Proxy server on your application server
-https://github.com/atomjump/medimage-co-nz-content-only/blob/master/medImageInstallOption3.pdf
+https://src.atomjump.com/atomjump/medimage-co-nz-content-only/blob/master/medImageInstallOption3.pdf
 
 * MedImage Server on Windows Servers with shared drives (e.g. Primary Health organisations)
-https://github.com/atomjump/medimage-co-nz-content-only/blob/master/MedImagePrimaryHealth.pdf
+https://src.atomjump.com/atomjump/medimage-co-nz-content-only/blob/master/MedImagePrimaryHealth.pdf
 
 
 

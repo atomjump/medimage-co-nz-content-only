@@ -38,7 +38,7 @@ node bin/server.js
 
 The ‘master’ branch has the latest server that includes the add-on capability.
 
-Server add-ons can be written in any language, and are run off the command-line as an external process.  These are run after certain events within the main server. Note: NodeJS is the only guaranteed language to exist on all installations of MedImage Server, so this is the preferred language for add-ons, but it is not a requirement. With NodeJS, you can also embed your add-on modules directly into the main MedImage server (>= ver 1.3.3), so this gives a large performance improvement. On Windows, the server has version 4.2.6 of NodeJS.
+Server add-ons can be written in any language, and are run off the command-line as an external process.  These are run after certain events within the main server. Note: NodeJS is the only guaranteed language to exist on all installations of MedImage Server, so this is the preferred language for add-ons, but it is not a requirement. With NodeJS, you can also embed your add-on modules directly into the main MedImage server (>= ver 1.3.3), so this gives a large performance improvement. On Windows, the MedImage server (< 1.8.4) has version 4.2.6 of NodeJS, but the MedImage Server version >= 1.8.4 uses NodeJS 14.17.1.
 
 An add-on exists in the /addons/ folder in a MedImage Server installation ( >= ver 0.8.1). In this folder is a config.json file, which should be written to as your add-on’s installation occurs, with your add-on’s new event entries. A customer may have other add-ons already installed, so it is best not to overwrite this file.  Here is a sample add-ons config.json:
 
@@ -311,7 +311,7 @@ Within a .zip package (which is easier to develop and test), you should include 
 
 ## Embedding NodeJS add-ons (ver >= 1.3.4)
 
-You should write your scripts to be compatible with NodeJS 4.2.6.
+You should write your scripts to ideally be compatible with NodeJS 4.2.6, but failing that, NodeJS 14.17.1 is the next target level, which is the new NodeJS version for the future Windows server (requires ver >= 1.8.4 of the MedImage Server on Windows).
 
 You must include a function called ‘medImage’ in your NodeJS module, that can be called by the main server e.g. in this pattern below:
 

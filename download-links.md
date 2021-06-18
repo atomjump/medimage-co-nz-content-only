@@ -17,10 +17,10 @@ https://itunes.apple.com/us/app/atomjump-medimage/id1087679463?ls=1&mt=8
 ## MedImage Server
 
 * Windows 64-bit
-https://s3-us-west-2.amazonaws.com/medimage-nz/MedImageInstaller.exe
+https://medimage-download.atomjump.com/MedImageInstaller.exe?ver=1.7.8
 
 * Windows 32-bit 
-https://s3-us-west-2.amazonaws.com/medimage-nz/MedImageInstaller32.exe
+https://medimage-download.atomjump.com/MedImageInstaller32.exe?ver=1.7.8
 
 * For Mac
 http://medimage.co.nz/medimage-server-mac-installation/
@@ -37,22 +37,24 @@ https://www.npmjs.com/package/medimage
 https://www.npmjs.com/package/medimage
 
 * Windows 64-bit
-https://s3-us-west-2.amazonaws.com/medimage-nz/MedImageInstaller.exe
+https://medimage-download.atomjump.com/MedImageInstaller.exe
 
 * Windows 32-bit 
-https://s3-us-west-2.amazonaws.com/medimage-nz/MedImageInstaller32.exe
+https://medimage-download.atomjump.com/MedImageInstaller32.exe
 
 
 ## Latest Beta
 
 * Windows 64-bit:
-https://s3-us-west-2.amazonaws.com/medimage-nz/MedImageInstaller-beta.exe
+https://medimage-download.atomjump.com/MedImageInstaller-beta.exe
 
 * Windows 32-bit:
-https://s3-us-west-2.amazonaws.com/medimage-nz/MedImageInstaller-beta32.exe
+https://medimage-download.atomjump.com/MedImageInstaller-beta32.exe?ver=1.7.8
 
 
 ## Upgrading Notes
+
+We recommend that you upgrade MedImage Servers prior to 1.6.1 (and >= 1.5.3) to version 1.6.1 via the version 1.6.1 patch. MedImage Servers <= 1.5.3 should be reinstalled/upgraded to 1.6.1 to fix this issue.
 
 If you are upgrading from a Windows MedImage Server prior to 1.0, we recommend you back-up the following files/folders, uninstall the MedImage Server, and remove the folder C:\MedImage, before installing MedImage Server > 1.0, and then installing any add-ons once more.
 

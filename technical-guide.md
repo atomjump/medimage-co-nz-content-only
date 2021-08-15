@@ -10,20 +10,31 @@ This repository is a public copy of the important content on http://medimage.co.
 
 
 
-## The Proxy Server [Optional]
+## The Cloud Server
+
+This product is also known as the ‘MedImage Proxy Server’.
+
+Reason: In a straightforward installation, customers can use the ‘AJ’ pairing button, which are MedImage’s own equivalent cloud servers (‘AJ’ is short for AtomJump, the developers of MedImage). There is a modest cost of NZ$3 / doctor/ month for using the ‘AJ’ service.
+
+However, and usually for security reasons, you can choose to keep data entirely on your own network with your own MedImage Cloud Server, replacing the ‘AJ’ cloud. This option is free, if you already have your our own physical cloud/web servers, or are renting them.
+
+Note: The MedImage Cloud downloadable software is a single node of the software that powers AtomJump’s own ‘AJ’ cloud. In addition, AtomJump’s own cloud has multiple load-balanced nodes, and an automatic fail-over system, which are not described here.
+
+Supports: Depending on the server hardware, each MedImage Cloud node should be able to handle up to several hundred doctor’s practices with an average of 7 doctors using the service regularly.
+
+https://src.atomjump.com/atomjump/medimage-co-nz-content-only/blob/master/MedImagePrimaryHealth.pdf
+
 
 Note: this section requires technical and system administration knowledge.
 
-<img src="https://src.atomjump.com/atomjump/medimage-co-nz-content-only/blob/master/medimage-proxy.png">
+What you will need: a Linux (or Windows) web server with an incoming and outgoing internet connection. Any number of practices with their own Windows Servers, potentially in different physical premises or in a hosted environment.
 
-What you will need: a linux (or Windows) web server with an incoming and outgoing internet connection. Any number of client Windows PCs potentially in different physical premises.
-
-The setup: your server will receive photos over 3G or 4G wireless from your doctor’s mobile phones. The client Windows PCs are associated uniquely with each different mobile phone (via a code generated for each PC). A photo will stay on the proxy server for a few seconds before being downloaded to the doctor’s unique Windows machine, and then being removed from the proxy server.
+The setup: your Cloud server will receive photos over a Wifi internet connection, or via a mobile data network from your doctor’s mobile phones. The mobile phones are associated uniquely with each practice’s different MedImage Servers (via a one-time pairing code). A photo will stay on the cloud server for a few seconds before being downloaded to that doctor’s own MedImage Server machine, and then be removed from the cloud server.
 
 
-## Proxy Setup
+## Cloud Setup
 
-On your internet server, first install NodeJS and npm. See these install scripts, under the section ‘Node.js v4.x’, but there are multiple ways to do this depending on your platform e.g. MacOSX specific instructions are here https://src.atomjump.com/atomjump/medimage-co-nz-content-only/blob/master/mac-installation.md. Note, Windows server users can install the same Windows 64-bit installer that client PCs use and do not need to follow the steps in this section below, however there are some configuration options which are slightly different (see Windows Binary Proxy Setup below).
+On your internet server, first install NodeJS and npm. See these install scripts, under the section ‘Node.js v4.x’, but there are multiple ways to do this depending on your platform e.g. MacOSX specific instructions are here https://src.atomjump.com/atomjump/medimage-co-nz-content-only/blob/master/mac-installation.md. Note, Windows server users should install the Cloud Servers from the Download page and you do not need to follow the steps in this section below, however there are some configuration options which are required (see Windows Cloud Setup below).
 
 Then
 
@@ -48,11 +59,11 @@ pm2 logs
 
 For further details about starting and stopping the server see PM2 and the MedImage technical README.
 
-## Windows client machine setup
+## Windows client practice setup
 
-Download and run the installable MedImageInstaller.exe on each client. Note: you will likely need to do this as an Administrator.
+Download and run the installable MedImage Server in each client practice. Usually you will only need to do this once per practice, on the Windows Server system that holds the Practice Management System. Note: you will likely need to do this as an Administrator.
 
-If you have installed your own proxy, enter the URL of your proxy server eg. ‘http://myproxy.mycompany.com:5566’
+Enter the URL of your MedImage Cloud server, from above, under the 3rd large button in the practice’s MedImage Server, when pairing eg. ‘http://myproxy.mycompany.com:5566’
 
 ## Phone setup
 
@@ -65,6 +76,8 @@ Enter the patient id in the box at the top, specific to each photo. Note: #tags 
 ```
 
 Click the large icon to start taking photos, and they will appear after a few seconds on your PC. The default folder is C:\MedImage\photos, but it will also be copied to the folder you specify when you installed the MedImage server (or particularly for MedTech users, C:\mt32\attachments).
+
+You can then make the target Windows Server’s folders visible to client desktop PCs, usually via a ‘shared drive letter’.
 
 ## Further options
 
@@ -119,9 +132,11 @@ Provide the ability to upload additional file types other than basic .jpg photos
 ```
 
 
-## Windows Binary Proxy Setup
+## Windows Binary Cloud Setup
 
-After the  installation of the MedImage Server on your internet-connected Windows Server, edit the config.json file in the server’s directory (usually C:\MedImage\config.json), and set these values:
+Note: for a Windows Cloud setup, you should use the MedImage Cloud Windows binary >= 1.8.7 from the Download Page.
+
+After the  installation of the MedImage Cloud on your internet-connected Windows Server, edit the config.json file in the server’s directory (usually C:\MedImage\config.json), and set these values:
 
 ```
 "allowPhotosLeaving": true,

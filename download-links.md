@@ -17,10 +17,10 @@ https://itunes.apple.com/us/app/atomjump-medimage/id1087679463?ls=1&mt=8
 ## MedImage Server
 
 * Windows 64-bit
-https://medimage-download.atomjump.com/MedImageInstaller.exe?ver=1.7.8
+https://medimage-download.atomjump.com/MedImageInstaller.exe
 
 * Windows 32-bit 
-https://medimage-download.atomjump.com/MedImageInstaller32.exe?ver=1.7.8
+https://medimage-download.atomjump.com/MedImageInstaller32.exe
 
 * For Mac
 http://medimage.co.nz/medimage-server-mac-installation/
@@ -31,17 +31,20 @@ https://www.npmjs.com/package/medimage
 
 
 
-## Proxy Server Options
+## Cloud Server Options
+
+This product is also known as a ‘MedImage Proxy Server’.
 
 * For linux
 https://www.npmjs.com/package/medimage
 
 * Windows 64-bit
-https://medimage-download.atomjump.com/MedImageInstaller.exe
+https://medimage-download.atomjump.com/pre-releases/MedImageInstaller-2.0.0.exe
 
 * Windows 32-bit 
-https://medimage-download.atomjump.com/MedImageInstaller32.exe
+https://medimage-download.atomjump.com/pre-releases/MedImageInstaller32-2.0.0.exe
 
+After installation of the Windows binaries, you should make changes to the configuration file. Please see the technical-guide.md file, section "Windows Binary Cloud Setup".
 
 ## Latest Beta
 

@@ -28,19 +28,6 @@ In order for you to receive the photos from your phone, you need to download a c
 
 https://src.atomjump.com/atomjump/medimage-co-nz-content-only/blob/master/SetupInstructionsforMedImage.pdf
 
-## The Proxy Server [Optional]
-
-You can choose this option if you prefer to keep all data transmission privately within your own network, although if this is not a requirement, it is more involved to install this way.
-
-Note: this section requires technical and system administration knowledge.
-
-What you will need: a linux (or Windows) web server with an incoming and outgoing internet connection. Any number of client Windows PCs potentially in different physical premises.
-
-The setup: your server will receive photos over 3G or 4G wireless from your doctor’s mobile phones. The client Windows PCs are associated uniquely with each different mobile phone (via a code generated for each PC). A photo will stay on the proxy server for a few seconds before being downloaded to the doctor’s unique Windows machine, and then being removed from the proxy server.
-
-More details can be found at:
-https://src.atomjump.com/atomjump/medimage-co-nz-content-only/blob/master/technical-guide.md
-
 
 ## Data Transfers
 
@@ -51,8 +38,18 @@ You have three options for transferring data via your phone to your PC
 * Via AtomJump.com’s Secure Servers. This option is easy to set up, and we provide 500MB of initial free transfer. You can purchase unlimited data transfer at a later date, at $US 2 per month (or $NZ 3/month).
 Purchase Bandwidth (contact atomjumpcom AT gmail.com)
 
-* Via your own Servers. This option takes a little technical expertise, and is free, although you will have standard bandwidth charges from your hosting providers. You have full control over the security of the servers, using http or https.
+* Via your own Servers. This option takes a little technical expertise, and is free, although you will have standard bandwidth charges from your hosting providers. You have full control over the security of the servers, using http or https. More information https://src.atomjump.com/atomjump/medimage-co-nz-content-only/blob/master/technical-guide.md
 
+
+## Expand Your Setup
+
+MedImage is not just a single app. It is an open platform designed to be expanded indefinitely.
+
+Resize photos consistently, send photos into your Practice Management System, chat directly with patients using the companion AtomJump Messaging software, or analyse patient photos over time with the wound analysis add-on.
+
+If your systems aren’t mentioned here, you can build your own connections, or employ a 3rd party to build connections. If you have a great idea for something that isn’t covered already, you can build your own add-on to the MedImage Server. There is no cost involved in building add-ons.
+
+http://medimage.co.nz/wp-content/uploads/2021/08/medimage-expansion-fullsize.png
 
 ## Privacy Policy
 

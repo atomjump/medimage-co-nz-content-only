@@ -33,8 +33,9 @@ https://www.npmjs.com/package/medimage
 ## Addons
 
 * EHR Connector
+
 https://medimage-download.atomjump.com/MedImageEHR64Installer.exe
-https://medimage-download.atomjump.com/MedImageEHR32Installer.exe?ver=0.8.4
+https://medimage-download.atomjump.com/MedImageEHR32Installer.exe
 
 https://medimage-download.atomjump.com/medimage-addons/medimage-addon-ehr-medtech32-0.5.2.zip
 https://medimage-download.atomjump.com/medimage-addons/medimage-addon-ehr-medtech-evolution-0.1.1.zip
@@ -43,9 +44,13 @@ https://medimage-download.atomjump.com/medimage-addons/medimage-addon-ehr-atomju
 
 * Wound Mapp 
 
+https://medimage-download.atomjump.com/WoundInstaller.exe
+https://medimage-download.atomjump.com/Wound32Installer.exe
+https://medimage-download.atomjump.com/wound-1.7.8.zip
 
+* MedImage Export
 
-* https://frontcdn.atomjump.com/atomjump-messaging/medimage_export-0.0.5.zip
+https://frontcdn.atomjump.com/atomjump-messaging/medimage_export-0.0.5.zip
 
 
 
@@ -73,7 +78,10 @@ https://medimage-download.atomjump.com/MedImageInstaller-beta.exe
 * Windows 32-bit:
 https://medimage-download.atomjump.com/MedImageInstaller-beta32.exe
 
+* Cloud (Developer 2.0 preview)
 
+https://medimage-download.atomjump.com/MedImageInstaller-beta-cloud.exe
+https://medimage-download.atomjump.com/MedImageInstaller-beta32-cloud.exe
 
 
 

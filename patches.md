@@ -62,3 +62,15 @@ If there is any issue with the operation of the MedImage Server after this patch
 * https://medimage-download.atomjump.com/previous-stable/MedImageServ-PatchInstaller-1.7.8.exe
 * https://medimage-download.atomjump.com/previous-stable/MedImageServ-Patch32Installer-1.7.8.exe
 * https://medimage-download.atomjump.com/medimageserv-patch-1.7.8.1.zip
+
+
+## Beta Patch Versions
+
+Ver 1.8.5.2 and 1.8.8.1 (Cloud) fixes a temporary file build-up if a connecting app is misbehaving.
+
+* https://medimage-download.atomjump.com/MedImageServ-PatchInstaller-beta.exe
+* https://medimage-download.atomjump.com/MedImageServ-Patch32Installer-beta.exe
+* https://medimage-download.atomjump.com/MedImageServ-PatchInstaller-cloud-beta.exe
+* https://medimage-download.atomjump.com/MedImageServ-Patch32Installer-cloud-beta.exe
+* https://medimage-download.atomjump.com/medimageserv-patch-1.8.5.1.zip
+

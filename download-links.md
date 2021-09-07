@@ -30,6 +30,24 @@ Or https://src.atomjump.com/atomjump/medimage-co-nz-content-only/blob/master/mac
 https://www.npmjs.com/package/medimage
 
 
+## Addons
+
+* EHR Connector
+https://medimage-download.atomjump.com/MedImageEHR64Installer.exe
+https://medimage-download.atomjump.com/MedImageEHR32Installer.exe?ver=0.8.4
+
+https://medimage-download.atomjump.com/medimage-addons/medimage-addon-ehr-medtech32-0.5.2.zip
+https://medimage-download.atomjump.com/medimage-addons/medimage-addon-ehr-medtech-evolution-0.1.1.zip
+https://medimage-download.atomjump.com/medimage-addons/medimage-addon-ehr-atomjump-messaging-0.1.7.zip
+
+
+* Wound Mapp 
+
+
+
+* https://frontcdn.atomjump.com/atomjump-messaging/medimage_export-0.0.5.zip
+
+
 
 ## Cloud Server Options
 
@@ -46,13 +64,17 @@ https://medimage-download.atomjump.com/pre-releases/MedImageInstaller32-2.0.0.ex
 
 After installation of the Windows binaries, you should make changes to the configuration file. Please see the technical-guide.md file, section "Windows Binary Cloud Setup".
 
+
 ## Latest Beta
 
 * Windows 64-bit:
 https://medimage-download.atomjump.com/MedImageInstaller-beta.exe
 
 * Windows 32-bit:
-https://medimage-download.atomjump.com/MedImageInstaller-beta32.exe?ver=1.7.8
+https://medimage-download.atomjump.com/MedImageInstaller-beta32.exe
+
+
+
 
 
 ## Upgrading Notes

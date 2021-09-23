@@ -50,7 +50,7 @@ https://medimage-download.atomjump.com/wound-1.7.8.zip
 
 * MedImage Export
 
-https://frontcdn.atomjump.com/atomjump-messaging/medimage_export-0.2.0.zip
+https://frontcdn.atomjump.com/atomjump-messaging/medimage_export-0.2.1.zip
 
 
 

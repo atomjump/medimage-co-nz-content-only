@@ -131,6 +131,11 @@ Provide the ability to upload additional file types other than basic .jpg photos
                     { "extension": ".mp3", "mime": "audio/mpeg" } ]
 ```
 
+Configurable maximum upload file sizes, in bytes (so the default is 16MB). This is useful for e.g. modern iPhones, which have a large default photo size. Server Ver >= 1.8.5.3, or Cloud Server Ver >= 1.9.0.
+
+```
+ "maxUploadSize" : 16777216
+```
 
 ## Windows Binary Cloud Setup
 

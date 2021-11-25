@@ -50,7 +50,7 @@ https://medimage-download.atomjump.com/wound-1.7.8.zip
 
 * MedImage Export
 
-https://frontcdn.atomjump.com/atomjump-messaging/medimage_export-0.2.2.zip
+https://frontcdn.atomjump.com/atomjump-messaging/medimage_export-0.2.7.zip
 
 
 
@@ -62,10 +62,10 @@ This product is also known as a ‘MedImage Proxy Server’.
 https://www.npmjs.com/package/medimage
 
 * Windows 64-bit
-https://medimage-download.atomjump.com/pre-releases/MedImageInstaller-2.0.0.exe
+https://medimage-download.atomjump.com/MedImageInstaller-cloud.exe
 
 * Windows 32-bit 
-https://medimage-download.atomjump.com/pre-releases/MedImageInstaller32-2.0.0.exe
+https://medimage-download.atomjump.com/MedImageInstaller-cloud.exe
 
 After installation of the Windows binaries, you should make changes to the configuration file. Please see the technical-guide.md file, section "Windows Binary Cloud Setup".
 
